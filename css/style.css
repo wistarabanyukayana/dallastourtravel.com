@@ -252,7 +252,7 @@ h6 {
 
 .owl-carousel.owl-custom-arrow .owl-nav{
 	position:absolute;
-	top:43%;
+	top:101%;
 	transform:translateY(-45%);
 	left:0;
 	width:100%;
@@ -268,16 +268,6 @@ h6 {
 
 .owl-carousel.owl-custom-arrow .owl-nav button .fa{
 	margin-bottom:5px;
-}
-
-.owl-carousel.owl-custom-arrow .owl-nav button.owl-prev{
-	left:-50px;
-	position:absolute;
-}
-
-.owl-carousel.owl-custom-arrow .owl-nav button.owl-next{
-	right:-50px;
-	position:absolute;
 }
 
 .map iframe{
@@ -1914,6 +1904,10 @@ nav.navbar .container.padding {
 		Best Features
    ----------------------------------------------------- */
 
+#best-features .page-heading h2{
+	color: white;
+}
+
 .b-feature-block{
 	text-align:center;
 }
@@ -2089,6 +2083,8 @@ nav.navbar .container.padding {
 
 .best-offer-img img{
 	display:inline-block;
+	padding: 50px 0 50px 50px;
+	
 }
 
 .best-offer-text{
@@ -2096,31 +2092,34 @@ nav.navbar .container.padding {
 }
 
 .best-offer-text h2{
-	font-size:55px;
+	font-size:60px;
 	font-weight:bold;
 }
 
 .best-offer-text h3{
-	font-size:28px;
+	font-size:50px;
 	font-weight:bold;
 	margin-bottom:0px;
 }
 
 .best-offer-text .best-offer-dur{
-	font-size:20px;
+	font-size:30px;
 	text-transform:uppercase;
 }
 
 .best-offer-text .best-offer-price{
-	font-size:36px;
+	font-size:40px;
 	text-transform:uppercase;
 	font-weight:bold;
 	margin:25px 0px 50px 0px;
 }
 
-.best-offer-text .btn{
-	font-size:1.4em;
-	padding:17px 50px;
+#best-offer-banner .btn{
+	font-size:28px;
+	width: 89%;
+	margin-bottom: 50px;
+	padding: 25px 0 25px;
+	align-content: center;
 }
 
 /**************** CAR-OFFER ****************/

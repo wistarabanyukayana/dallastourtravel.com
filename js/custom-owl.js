@@ -12,7 +12,7 @@
     companyLogo = $("#owl-company-logo"),
     attractions = $("#owl-attractions");
 
-  // Owl Hotel Offers
+  // Owl Package Offers
   packageOffers.owlCarousel({
     items: 3,
     loop: true,
@@ -33,10 +33,6 @@
     ],
     rewind: true,
     scrollPerPage: false,
-
-    //Pagination
-    dots: false,
-    dotsEach: false,
 
     // Responsive
     responsive: {

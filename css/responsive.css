@@ -1798,11 +1798,20 @@ Author:			Star Travel
   }
 }
 
-/************** CRUISE-OFFER ***************/
+/************** BEST-OFFER ***************/
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  .best-offer-text {
-    padding: 65px 0px 0px 50px;
+  .best-offer-text h2 {
+    font-size: 45px;
+  }
+  .best-offer-text h3 {
+    font-size: 28px;
+  }
+  .best-offer-text .best-offer-dur {
+    font-size: 25px;
+  }
+  #best-offer-banner .btn {
+    width: 87%;
   }
 }
 
@@ -1819,27 +1828,38 @@ Author:			Star Travel
     font-size: 22px;
   }
 
-  .best-offer-text .cruise-offer-dur {
+  .best-offer-text .best-offer-dur {
     font-size: 15px;
   }
 
-  .best-offer-text .cruise-offer-price {
+  .best-offer-text .best-offer-price {
     font-size: 28px;
     margin: 25px 0px 35px 0px;
   }
 
-  .best-offer-text .btn {
-    font-size: 1.2em;
-    padding: 14px 40px;
+  #best-offer-banner .btn {
+    font-size: 20px;
+    width: 83%;
   }
 }
 
 @media (max-width: 767px) {
+  .best-offer-img img {
+    padding: 0;
+  }
   .best-offer-text {
-    padding: 40px 10px 50px;
+    padding: 40px 10px 0px;
     text-align: center;
   }
-  .best-offer-dur {
+  .best-offer-text h2 {
+    font-size: 55px;
+  }
+  .best-offer-text h3 {
+    font-size: 38px;
+  }
+
+  .best-offer-text .best-offer-dur {
+    font-size: 25px;
     margin-left: 15dvw;
     text-align: start;
   }
@@ -1857,7 +1877,7 @@ Author:			Star Travel
 
   .best-offer-text .btn {
     font-size: 1.1em;
-    padding: 12px 30px;
+    padding: 12px 50px;
   }
 }
 
@@ -4360,16 +4380,6 @@ Author:			Star Travel
 
 @media (max-width: 767px) {
   .owl-carousel.owl-custom-arrow .owl-nav {
-    top: 100%;
-  }
-
-  .owl-carousel.owl-custom-arrow .owl-nav button.owl-prev {
-    left: 0;
-    position: absolute;
-  }
-
-  .owl-carousel.owl-custom-arrow .owl-nav button.owl-next {
-    right: 0;
-    position: absolute;
+    top: 101%;
   }
 }
