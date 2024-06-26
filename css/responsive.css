@@ -1869,15 +1869,22 @@ Author:			Star Travel
   .best-offer-text h2 {
     font-size: 35px;
   }
-
-  .best-offer-text .cruise-offer-price {
+  .best-offer-text h3 {
+    font-size: 33px;
+  }
+  .best-offer-text .best-offer-price {
     font-size: 25px;
-    margin: 25px 0px 35px 0px;
+    margin: 15px 0px 15px 0px;
+  }
+  .best-offer-text .best-offer-dur {
+    font-size: 20px;
+    margin-left: 10dvw;
   }
 
-  .best-offer-text .btn {
-    font-size: 1.1em;
+  #best-offer-banner .btn {
+    font-size: 15px;
     padding: 12px 50px;
+    margin-bottom: 15px;
   }
 }
 

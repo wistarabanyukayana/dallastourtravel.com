@@ -388,7 +388,7 @@ nav.navbar#mynavbar-1 .navbar-brand span {
 }
 
 nav.navbar#mynavbar-1 .header-search .fa {
-  color: #faa61a;
+  color: #fa1a1a;
 }
 
 nav.navbar#mynavbar-1 .navbar-search-link > li:last-child a {
@@ -1168,8 +1168,8 @@ nav.navbar#mynavbar-3 .mega-dropdown-menu .dropdown-header {
 }
 
 #sidebar #web-name {
-  background: #faa61a !important;
-  color: white;
+  background: #ffffff !important;
+  color: #fa1a1a;
 }
 
 #sidebar #web-name::after {
@@ -1215,11 +1215,11 @@ nav.navbar#mynavbar-3 .mega-dropdown-menu .dropdown-header {
 }
 
 #main-menu .list-group > a.items-list > span > i.link-icon {
-  color: #faa61a;
+  color: #fa1a1a;
 }
 
 #main-menu .list-group > a.items-list > span > i.arrow {
-  color: #faa61a;
+  color: #fa1a1a;
 }
 
 #main-menu .list-group .sub-menu .list-group-heading span {
@@ -2377,7 +2377,7 @@ nav.navbar#mynavbar-3 .mega-dropdown-menu .dropdown-header {
 }
 
 .footer-widget.ftr-about .social-links li .fa:hover {
-  color: #faa61a;
+  color: #fa1a1a;
 }
 
 .footer-widget.ftr-in-touch input,
