@@ -3708,11 +3708,8 @@ nav.navbar#mynavbar-3 .mega-dropdown-menu .dropdown-header {
 /************** ERROR PAGE **************/
 
 #error-text {
-  background: linear-gradient(
-      rgba(250, 166, 26, 0.85),
-      rgba(250, 166, 26, 0.85)
-    ),
-    url("../assets/img/error-page.jpg") top;
+  background: linear-gradient(rgba(250, 26, 26, 0.85), rgba(250, 26, 26, 0.85)),
+    url("../assets/img/404.png") top;
   background-size: 145%;
   color: white;
 }
