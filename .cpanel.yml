@@ -12,7 +12,7 @@ deployment:
     - /bin/cp paket-umroh-maulid.html $DEPLOYPATH
     - /bin/cp paket-silver.html $DEPLOYPATH
     - /bin/cp paket-gold.html $DEPLOYPATH
-    - /bin/cp pake-platinum.html $DEPLOYPATH
+    - /bin/cp paket-platinum.html $DEPLOYPATH
     - /bin/cp syarat-ketentuan.html $DEPLOYPATH
     - /bin/cp kebijakan-privasi.html $DEPLOYPATH
     - /bin/cp 404.shtml $DEPLOYPATH
