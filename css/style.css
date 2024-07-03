@@ -4518,93 +4518,12 @@ nav.navbar .container.padding {
 #coming-soon-text p{
 	font-size:30px;
 	text-transform:uppercase;
+	margin-bottom: 55px;
 }
 
-#coming-soon-text form .form-group{
-	width:360px;
-	margin:60px auto 95px;
-}
-
-#coming-soon-text form input{
-	font-size:15px;
-	height:42px;
-}
-
-#coming-soon-text .input-group-btn .btn{
-	height:42px;
-	width:52px;
-	font-size:28px;
-}
-
-#coming-soon-text .input-group-btn .btn i{
-	position:relative;
-	top:-7px;
-}
-
-#coming-soon-text .timer li{
-	height:112px;
-	width:112px;
-	font-size:16px;
-	padding-top:28px;
-	margin:20px 14px; 
-	overflow:hidden;
-}
-
-#coming-soon-text .timer li .digit{
-	font-size:54px;
-	font-weight:300;
-	display:block;
-	margin-bottom:23px;
-}
-
-/********** COMING SOON 2 PAGE ***********/
-
-#coming-soon-page-2 .full-page-title{
-	margin-bottom:25px;
-}
-
-#coming-soon-page-2 .company-name{
-	margin-bottom:20px;
-}
-
-#coming-soon-page-2  h2{
-	margin-bottom:20px;
-}
-
-#coming-soon-page-2 .coming-soon-2-timer ul li{
-	margin-top:30px;	
-	text-transform:uppercase;
-}
-
-#coming-soon-page-2 .coming-soon-2-timer ul li .digit{
-	display:block;
-	font-size:40px;
-	margin-bottom:8px;
-	width:120px;
-	height:120px;
-	padding-top:48px;
-}
-
-#coming-soon-page-2-text .full-page-copyright{
-	margin-bottom:0px;
-}
-
-#coming-soon-page-2-text form .form-group{
-	width:380px;
-	margin:60px auto 55px;
-}
-
-#coming-soon-page-2-text form input{
-	font-size:15px;
-}
-
-#coming-soon-page-2-text form input,
-#coming-soon-page-2-text form .btn{
-	height:45px;
-}
-
-#coming-soon-page-2-text form .btn{
-	padding:0px 20px;
+#coming-soon-text a{
+	font-size:20px;
+	padding:14px 50px;
 }
 
 /********* BLOG LISTINGS PAGE ***********/

@@ -2353,7 +2353,7 @@ nav.navbar#mynavbar-3 .mega-dropdown-menu .dropdown-header {
 }
 
 #footer.ftr-heading-o .footer-heading {
-  color: #fa1a1a;
+  color: white;
 }
 
 #footer.ftr-heading-w .footer-heading {
@@ -3756,7 +3756,10 @@ nav.navbar#mynavbar-3 .mega-dropdown-menu .dropdown-header {
 /********** COMING SOON PAGE ************/
 
 #coming-soon-text {
-  background: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)),
+  background: linear-gradient(
+      rgba(124, 121, 169, 0.56),
+      rgba(124, 121, 169, 0.56)
+    ),
     url("../assets/img/coming-soon-page.jpg") bottom;
   background-size: 145%;
   color: white;

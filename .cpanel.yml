@@ -3,6 +3,19 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/dallastourtravel/public_html/
     - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp produk-layanan.html $DEPLOYPATH
+    - /bin/cp artikel.html $DEPLOYPATH
+    - /bin/cp galeri.html $DEPLOYPATH
+    - /bin/cp tentang-dallas.html $DEPLOYPATH
+    - /bin/cp paket-clasic.html $DEPLOYPATH
+    - /bin/cp paket-signature.html $DEPLOYPATH
+    - /bin/cp paket-umroh-maulid.html $DEPLOYPATH
+    - /bin/cp paket-silver.html $DEPLOYPATH
+    - /bin/cp paket-gold.html $DEPLOYPATH
+    - /bin/cp pake-platinum.html $DEPLOYPATH
+    - /bin/cp syarat-ketentuan.html $DEPLOYPATH
+    - /bin/cp kebijakan-privasi.html $DEPLOYPATH
+    - /bin/cp 404.shtml $DEPLOYPATH
     - /bin/cp -R css $DEPLOYPATH
     - /bin/cp -R js $DEPLOYPATH
     - /bin/cp -R assets $DEPLOYPATH
