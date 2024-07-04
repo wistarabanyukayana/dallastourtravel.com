@@ -201,7 +201,17 @@ p {
 .owl-carousel.owl-custom-arrow .owl-nav button.owl-prev,
 .owl-carousel.owl-custom-arrow .owl-nav button.owl-next {
   border-radius: 0px;
-  background: #fa1a1a;
+  background: white;
+}
+
+.owl-carousel.owl-custom-arrow .owl-nav button.owl-prev:hover,
+.owl-carousel.owl-custom-arrow .owl-nav button.owl-next:hover {
+  background: red;
+}
+
+.owl-carousel.owl-custom-arrow .owl-nav button.owl-prev:active,
+.owl-carousel.owl-custom-arrow .owl-nav button.owl-next:active {
+  background: -moz-repeating-radial-gradient();
 }
 
 .map iframe {
