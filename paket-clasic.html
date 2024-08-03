@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Dallas Tour & Travel - Segera Tiba</title>
+    <title>Dallas Tour & Travel - Paket Clasic</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link
@@ -63,150 +63,103 @@
   </head>
 
   <body>
-    <!--====== LOADER =====-->
-    <div class="loader"></div>
+    <div class="wrapper">
+      <!--====== LOADER =====-->
+      <div class="loader"></div>
 
-    <!--===== INNERPAGE-WRAPPER ====-->
-    <section class="innerpage-wrapper h-100">
-      <div id="coming-soon-text" class="section-padding back-size h-100">
-        <div class="container h-100">
-          <div class="row h-100 align-items-center">
-            <div class="col-md-12">
-              <h3 class="company-name">
-                <a href="#"><img id="logo" src="assets/img/logo.png" /></a>
-              </h3>
-              <h2>Segera Tiba</h2>
-              <p>Halaman ini dalam proses pembaharuan.</p>
-              <a href="/" class="btn btn-w-border">Kembali ke Beranda</a>
+      <!--======== SEARCH-OVERLAY =========-->
+      <div id="myOverlay" class="overlay">
+        <span class="closebtn" onclick="closeSearch()" title="Close Overlay"
+          >×</span
+        >
+        <div class="overlay-content">
+          <form>
+            <div class="form-group">
+              <div class="input-group">
+                <input
+                  class="float-left"
+                  type="text"
+                  placeholder="Search.."
+                  name="search"
+                />
+                <button class="float-left" type="submit">
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
+              <!-- end input-group -->
             </div>
-            <!-- end columns -->
-          </div>
-          <!-- end row -->
+            <!-- end form-group -->
+          </form>
         </div>
-        <!-- end container -->
+        <!-- end overlay-content -->
       </div>
-      <!-- end coming-soon-text -->
-    </section>
-    <!-- end innerpage-wrapper -->
+      <!-- end overlay -->
 
-    <!--======================= FOOTER =======================-->
-    <section id="footer" class="ftr-heading-o ftr-heading-mgn-1">
-      <div id="footer-top" class="banner-padding ftr-top-grey ftr-text-white">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div
-              class="col-12 col-md-6 col-lg-4 col-xl-4 footer-widget ftr-about"
-            >
-              <h3 class="footer-heading">Dallas Tour & Travel</h3>
-              <p>
-                PT. Dallas Laras Wisata (Dallas) berupaya untuk selalu
-                meningkatkan kualitas pelayanan dengan menghadirkan berbagai
-                fasilitas dan program yang sesuai dengan kebutuhan jamaah. Kami
-                berharap dapat terus menjadi bagian dari perjalanan spiritual
-                Anda dan bersama-sama meraih ridha Allah SWT.
-              </p>
-              <ul class="social-links list-inline list-unstyled">
-                <li class="list-inline-item">
-                  <a href="https://web.facebook.com/DALLASTOURTRAVEL"
-                    ><span><i class="fa fa-facebook"></i></span
-                  ></a>
-                </li>
-                <li class="list-inline-item" style="display: none">
-                  <a href="#"
-                    ><span><i class="fa fa-twitter"></i></span
-                  ></a>
-                </li>
-                <li class="list-inline-item" style="display: none">
-                  <a href="#"
-                    ><span><i class="fa fa-google-plus"></i></span
-                  ></a>
-                </li>
-                <li class="list-inline-item" style="display: none">
-                  <a href="#"
-                    ><span><i class="fa fa-pinterest-p"></i></span
-                  ></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.instagram.com/officialdallastourtravel"
-                    ><span><i class="fa fa-instagram"></i></span
-                  ></a>
-                </li>
-                <li class="list-inline-item">
-                  <a
-                    href="https://www.linkedin.com/in/pt-delta-laras-wisata-b1a369313"
-                    ><span><i class="fa fa-linkedin"></i></span
-                  ></a>
-                </li>
-                <li class="list-inline-item" style="display: none">
-                  <a href="#"
-                    ><span><i class="fa fa-youtube-play"></i></span
-                  ></a>
-                </li>
-              </ul>
-            </div>
-            <!-- end columns -->
-
-            <div
-              class="col-12 col-md-6 col-lg-3 col-xl-3 footer-widget ftr-contact"
-            >
-              <h3 class="footer-heading">Hubungi Kami</h3>
-              <ul class="list-unstyled">
-                <li>
-                  <span><i class="fa fa-map-marker"></i></span>Jl. Raya
-                  Kalibata, Jakarta
-                </li>
-                <li>
-                  <span><i class="fa fa-phone"></i></span>(021) 80878321
-                </li>
-                <li>
-                  <span><i class="fa fa-envelope"></i></span
-                  >admin@dallastourtravel.com
-                </li>
-              </ul>
-            </div>
-            <!-- end columns -->
-
-            <div
-              class="col-12 col-md-6 col-lg-2 col-xl-2 footer-widget ftr-links"
-            >
-              <h3 class="footer-heading">Perusahaan</h3>
-              <ul class="list-unstyled">
-                <li><a href="#">Beranda</a></li>
-                <li><a href="#">Produk & Layanan</a></li>
-                <li><a href="#">Berita</a></li>
-                <li><a href="#">Galeri</a></li>
-                <li><a href="#">Tentang Dallas</a></li>
-              </ul>
-            </div>
-            <!-- end columns -->
-            <!-- end columns -->
-          </div>
-          <!-- end row -->
-        </div>
-        <!-- end container -->
-      </div>
-      <!-- end footer-top -->
-
-      <div id="footer-bottom" class="ftr-bot-black">
+      <!--============= TOP-BAR ===========-->
+      <div id="top-bar" class="tb-text-white">
         <div class="container">
           <div class="row">
-            <div class="col-12 col-md-6 col-lg-6 col-xl-6" id="copyright">
-              <p>
-                © 2024 <a href="#">PT. Delta Lara Wisata</a>. Hak Cipta
-                Dilindungi.
-              </p>
+            <div class="col-12 col-md-6">
+              <div id="info">
+                <ul class="list-unstyled list-inline">
+                  <li class="list-inline-item">
+                    <span><i class="fa fa-map-marker"></i></span>Jl. Raya
+                    Kalibata, Jakarta
+                  </li>
+                  <li class="list-inline-item">
+                    <span><i class="fa fa-phone"></i></span>(021) 80878321
+                  </li>
+                </ul>
+              </div>
+              <!-- end info -->
             </div>
             <!-- end columns -->
-
-            <div class="col-12 col-md-6 col-lg-6 col-xl-6" id="terms">
-              <ul class="list-unstyled list-inline">
-                <li class="list-inline-item">
-                  <a href="#">Syarat & Ketentuan</a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">Kebijakan Privasi</a>
-                </li>
-              </ul>
+            <div class="col-12 col-md-6">
+              <div id="links">
+                <ul class="list-unstyled list-inline">
+                  <li class="list-inline-item">
+                    <a href="login-1.html"
+                      ><span><i class="fa fa-lock"></i></span>Masuk</a
+                    >
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="registration-1.html"
+                      ><span><i class="fa fa-plus"></i></span>Daftar</a
+                    >
+                  </li>
+                  <li class="list-inline-item">
+                    <form>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <div class="form-group currency">
+                            <span><i class="fa fa-angle-down"></i></span>
+                            <select class="form-control">
+                              <option value="">Rp</option>
+                              <option value="">$</option>
+                              <option value="">£</option>
+                            </select>
+                          </div>
+                          <!-- end form-group -->
+                        </li>
+                        <li class="list-inline-item">
+                          <div class="form-group language">
+                            <span><i class="fa fa-angle-down"></i></span>
+                            <select class="form-control">
+                              <option value="">ID</option>
+                              <option value="">EN</option>
+                              <option value="">UR</option>
+                              <option value="">FR</option>
+                              <option value="">IT</option>
+                            </select>
+                          </div>
+                          <!-- end form-group -->
+                        </li>
+                      </ul>
+                    </form>
+                  </li>
+                </ul>
+              </div>
+              <!-- end links -->
             </div>
             <!-- end columns -->
           </div>
@@ -214,16 +167,1011 @@
         </div>
         <!-- end container -->
       </div>
-      <!-- end footer-bottom -->
-    </section>
-    <!-- end footer -->
+      <!-- end top-bar -->
+
+      <nav
+        class="navbar navbar-expand-xl sticky-top navbar-custom main-navbar p-1"
+        id="mynavbar-1"
+      >
+        <div class="container">
+          <a href="#" class="navbar-brand py-1 m-0"
+            ><img id="logo" src="assets/img/logo.png"
+          /></a>
+          <div class="header-search d-xl-none my-auto ms-auto py-1">
+            <a href="#" class="search-button" onClick="openSearch()"
+              ><span><i class="fa fa-search"></i></span
+            ></a>
+          </div>
+          <button
+            class="navbar-toggler ms-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            id="sidebarCollapse"
+          >
+            <i class="fa fa-navicon py-1"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="myNavbar1">
+            <ul class="navbar-nav ms-auto navbar-search-link">
+              <li class="nav-item dropdown">
+                <a
+                  href="/"
+                  class="nav-link"
+                  id="navbarDropdown"
+                  role="button"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Beranda</a
+                >
+              </li>
+              <li class="nav-item dropdown active">
+                <a
+                  href="produk-layanan.html"
+                  class="nav-link"
+                  data-bs-toggle="dropdown"
+                  style="text-wrap: nowrap"
+                  >Produk & Layanan<span><i class="fa fa-angle-down"></i></span
+                ></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="haji.html">Haji</a>
+                  </li>
+                  <li class="active">
+                    <a class="dropdown-item" href="umroh.html">Umroh</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="wisata-halal.html"
+                      >Wisata Halal</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="artikel.html" class="nav-link">Artikel</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="galeri.html" class="nav-link">Galeri</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="tentang-dallas.html" class="nav-link"
+                  >Tentang Dallas</a
+                >
+              </li>
+              <li class="dropdown-item search-btn">
+                <a href="#" class="search-button" onClick="openSearch()"
+                  ><span><i class="fa fa-search"></i></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <!-- end navbar collapse -->
+        </div>
+        <!-- End container -->
+      </nav>
+      <div class="sidenav-content">
+        <!-- Sidebar  -->
+        <nav id="sidebar" class="sidenav">
+          <h2 id="web-name">
+            <span
+              ><div id="logo-container">
+                <a href="#" class="navbar-brand py-1 my-auto pl-md-2 m-0"
+                  ><img id="logo" src="assets/img/logo.png"
+                /></a></div
+            ></span>
+          </h2>
+
+          <div id="main-menu">
+            <div id="dismiss">
+              <button class="btn" id="closebtn">&times;</button>
+            </div>
+            <div class="list-group panel">
+              <a href="/" class="items-list active" aria-expanded="false">
+                <span><i class="fa fa-home link-icon"></i></span>Beranda</a
+              >
+
+              <a
+                class="items-list"
+                href="produk-layanan.html"
+                data-bs-toggle="collapse"
+                ><span><i class="fa fa-th-large link-icon"></i></span>Produk &
+                Layanan<span><i class="fa fa-chevron-down arrow"></i></span
+              ></a>
+              <div class="collapse sub-menu" id="product&service-links">
+                <a class="items-list" href="haji.html">Haji</a>
+                <a class="items-list" href="umroh.html">Umroh</a>
+                <a class="items-list" href="wisata-halal.html">Wisata Halal</a>
+              </div>
+              <!-- end sub-menu -->
+
+              <a class="items-list" href="artikel.html"
+                ><span><i class="fa fa-newspaper-o link-icon"></i></span
+                >Artikel</a
+              >
+
+              <a class="items-list" href="galeri.html"
+                ><span><i class="fa fa-picture-o link-icon"></i></span>Galeri</a
+              >
+
+              <a class="items-list" href="tentang-dallas.html"
+                ><span><i class="fa fa-building link-icon"></i></span>Tentang
+                Dallas</a
+              >
+            </div>
+            <!-- End list-group panel -->
+          </div>
+          <!-- End main-menu -->
+        </nav>
+      </div>
+      <!-- End sidenav-content -->
+
+      <!--================ PAGE-COVER ================-->
+      <section class="page-cover" id="cover-tour-detail">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="page-title">Umroh Clasic</h1>
+              <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Beranda</a></li>
+                <li class="breadcrumb-item">Umroh Clasic</li>
+              </ul>
+            </div>
+            <!-- end columns -->
+          </div>
+          <!-- end row -->
+        </div>
+        <!-- end container -->
+      </section>
+      <!-- end page-cover -->
+
+      <!--===== INNERPAGE-WRAPPER ====-->
+      <section class="innerpage-wrapper">
+        <div id="tour-details" class="innerpage-section-padding">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-12 col-lg-9 col-xl-9 content-side">
+                <div class="detail-slider">
+                  <div class="feature-slider">
+                    <div>
+                      <img
+                        src="assets/img/paket-clasic.png"
+                        class="img-fluid"
+                        alt="feature-img"
+                      />
+                    </div>
+                  </div>
+                  <!-- end feature-slider -->
+                  <ul class="list-unstyled features tour-features">
+                    <li>
+                      <div class="f-icon"><i class="fa fa-archive"></i></div>
+                      <div class="f-text">
+                        <p class="f-heading">Jenis Paket</p>
+                        <p class="f-data">Umroh</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="f-icon"><i class="fa fa-calendar"></i></div>
+                      <div class="f-text">
+                        <p class="f-heading">Durasi</p>
+                        <p class="f-data">9 Hari</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="f-icon"><i class="fa fa-clock-o"></i></div>
+                      <div class="f-text">
+                        <p class="f-heading">Keberangkatan</p>
+                        <p class="f-data">16 & 20 Agustus 2024</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <!-- end detail-slider -->
+
+                <div class="detail-tabs">
+                  <ul class="nav nav-tabs nav-justified">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active"
+                        href="#tour-information"
+                        data-bs-toggle="tab"
+                        >Informasi Paket</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#flight" data-bs-toggle="tab"
+                        >Maskapai</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="#map-overview"
+                        data-bs-toggle="tab"
+                        >Hotel</a
+                      >
+                    </li>
+                  </ul>
+
+                  <div class="tab-content">
+                    <div id="tour-information" class="tab-pane in active">
+                      <div class="row">
+                        <div class="col-md-4 col-lg-4 tab-img">
+                          <img
+                            src="assets/img/hotel-detail-tab-1.jpg"
+                            class="img-fluid"
+                            alt="flight-detail-img"
+                          />
+                        </div>
+                        <!-- end columns -->
+
+                        <div class="col-md-8 col-lg-8 tab-text">
+                          <h3>Tour Information</h3>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore
+                            eu fugiat nulla pariatur.
+                          </p>
+                        </div>
+                        <!-- end columns -->
+                      </div>
+                      <!-- end row -->
+                    </div>
+                    <!-- end hotel-overview -->
+
+                    <div id="flight" class="tab-pane">
+                      <div class="row">
+                        <div class="col-md-4 col-lg-4 tab-img">
+                          <img
+                            src="assets/img/hotel-detail-tab-2.jpg"
+                            class="img-fluid"
+                            alt="flight-detail-img"
+                          />
+                        </div>
+                        <!-- end columns -->
+
+                        <div class="col-md-8 col-lg-8 tab-text">
+                          <h3>Flight</h3>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua.<br />
+                            Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur.
+                          </p>
+                        </div>
+                        <!-- end columns -->
+                      </div>
+                      <!-- end row -->
+                    </div>
+                    <!-- end restaurant -->
+
+                    <div id="map-overview" class="tab-pane">
+                      <div class="row">
+                        <div class="col-md-4 col-lg-4 tab-img">
+                          <img
+                            src="assets/img/hotel-detail-tab-3.jpg"
+                            class="img-fluid"
+                            alt="flight-detail-img"
+                          />
+                        </div>
+                        <!-- end columns -->
+
+                        <div class="col-md-8 col-lg-8 tab-text">
+                          <h3>Our Map</h3>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore
+                            eu fugiat nulla pariatur.
+                          </p>
+                        </div>
+                        <!-- end columns -->
+                      </div>
+                      <!-- end row -->
+                    </div>
+                    <!-- end pick-up -->
+                  </div>
+                  <!-- end tab-content -->
+                </div>
+                <!-- end detail-tabs -->
+
+                <div class="available-blocks" id="available-tours">
+                  <h2>Available Tours</h2>
+                  <div class="list-block main-block t-list-block">
+                    <div class="list-content">
+                      <div class="main-img list-img t-list-img">
+                        <a href="tour-detail-left-sidebar.html">
+                          <img
+                            src="assets/img/tour-list-1.jpg"
+                            class="img-fluid"
+                            alt="tour-img"
+                          />
+                        </a>
+                        <div class="main-mask">
+                          <ul class="list-unstyled list-inline offer-price-1">
+                            <li class="list-inline-item price">
+                              $568.00<span class="divider">|</span
+                              ><span class="pkg">7 Days Tour</span>
+                            </li>
+                            <li class="list-inline-item rating">
+                              <span><i class="fa fa-star orange"></i></span>
+                              <span><i class="fa fa-star orange"></i></span>
+                              <span><i class="fa fa-star orange"></i></span>
+                              <span><i class="fa fa-star orange"></i></span>
+                              <span><i class="fa fa-star lightgrey"></i></span>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- end main-mask -->
+                      </div>
+                      <!-- end t-list-img -->
+
+                      <div class="list-info t-list-info">
+                        <h3 class="block-title">
+                          <a href="tour-detail-left-sidebar.html">Orlando</a>
+                        </h3>
+                        <p class="block-minor">2 Adults, 02 Kids</p>
+                        <p>
+                          Lorem ipsum dolor sit amet, ad duo fugit aeque
+                          fabulas, in lucilius prodesset pri. Veniam delectus ei
+                          vis. Est atqui timeam mnesarchum at, pro an eros
+                          perpetua ullamcorper.
+                        </p>
+                        <a
+                          href="tour-detail-left-sidebar.html"
+                          class="btn btn-orange btn-lg"
+                          >View More</a
+                        >
+                      </div>
+                      <!-- end t-list-info -->
+                    </div>
+                    <!-- end list-content -->
+                  </div>
+                  <!-- end t-list-block -->
+
+                  <div class="list-block main-block t-list-block">
+                    <div class="list-content">
+                      <div class="main-img list-img t-list-img">
+                        <a href="tour-detail-left-sidebar.html">
+                          <img
+                            src="assets/img/tour-list-2.jpg"
+                            class="img-fluid"
+                            alt="tour-img"
+                          />
+                        </a>
+                        <div class="main-mask">
+                          <ul class="list-unstyled list-inline offer-price-1">
+                            <li class="list-inline-item price">
+                              $568.00<span class="divider">|</span
+                              ><span class="pkg">7 Days Tour</span>
+                            </li>
+                            <li class="list-inline-item rating">
+                              <span><i class="fa fa-star orange"></i></span>
+                              <span><i class="fa fa-star orange"></i></span>
+                              <span><i class="fa fa-star orange"></i></span>
+                              <span><i class="fa fa-star orange"></i></span>
+                              <span><i class="fa fa-star lightgrey"></i></span>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- end main-mask -->
+                      </div>
+                      <!-- end t-list-img -->
+
+                      <div class="list-info t-list-info">
+                        <h3 class="block-title">
+                          <a href="tour-detail-left-sidebar.html">London</a>
+                        </h3>
+                        <p class="block-minor">2 Adults, 02 Kids</p>
+                        <p>
+                          Lorem ipsum dolor sit amet, ad duo fugit aeque
+                          fabulas, in lucilius prodesset pri. Veniam delectus ei
+                          vis. Est atqui timeam mnesarchum at, pro an eros
+                          perpetua ullamcorper.
+                        </p>
+                        <a
+                          href="tour-detail-left-sidebar.html"
+                          class="btn btn-orange btn-lg"
+                          >View More</a
+                        >
+                      </div>
+                      <!-- end t-list-info -->
+                    </div>
+                    <!-- end list-content -->
+                  </div>
+                  <!-- end t-list-block -->
+
+                  <div class="list-block main-block t-list-block">
+                    <div class="list-content">
+                      <div class="main-img list-img t-list-img">
+                        <a href="tour-detail-left-sidebar.html">
+                          <img
+                            src="assets/img/tour-list-3.jpg"
+                            class="img-fluid"
+                            alt="tour-img"
+                          />
+                        </a>
+                        <div class="main-mask">
+                          <ul class="list-unstyled list-inline offer-price-1">
+                            <li class="list-inline-item price">
+                              $568.00<span class="divider">|</span
+                              ><span class="pkg">7 Days Tour</span>
+                            </li>
+                            <li class="list-inline-item rating">
+                              <span><i class="fa fa-star orange"></i></span>
+                              <span><i class="fa fa-star orange"></i></span>
+                              <span><i class="fa fa-star orange"></i></span>
+                              <span><i class="fa fa-star orange"></i></span>
+                              <span><i class="fa fa-star lightgrey"></i></span>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- end main-mask -->
+                      </div>
+                      <!-- end t-list-img -->
+
+                      <div class="list-info t-list-info">
+                        <h3 class="block-title">
+                          <a href="tour-detail-left-sidebar.html">Australia</a>
+                        </h3>
+                        <p class="block-minor">2 Adults, 02 Kids</p>
+                        <p>
+                          Lorem ipsum dolor sit amet, ad duo fugit aeque
+                          fabulas, in lucilius prodesset pri. Veniam delectus ei
+                          vis. Est atqui timeam mnesarchum at, pro an eros
+                          perpetua ullamcorper.
+                        </p>
+                        <a
+                          href="tour-detail-left-sidebar.html"
+                          class="btn btn-orange btn-lg"
+                          >View More</a
+                        >
+                      </div>
+                      <!-- end t-list-info -->
+                    </div>
+                    <!-- end list-content -->
+                  </div>
+                  <!-- end t-list-block -->
+
+                  <div class="list-block main-block t-list-block">
+                    <div class="list-content">
+                      <div class="main-img list-img t-list-img">
+                        <a href="tour-detail-left-sidebar.html">
+                          <img
+                            src="assets/img/tour-list-4.jpg"
+                            class="img-fluid"
+                            alt="tour-img"
+                          />
+                        </a>
+                        <div class="main-mask">
+                          <ul class="list-unstyled list-inline offer-price-1">
+                            <li class="list-inline-item price">
+                              $568.00<span class="divider">|</span
+                              ><span class="pkg">7 Days Tour</span>
+                            </li>
+                            <li class="list-inline-item rating">
+                              <span><i class="fa fa-star orange"></i></span>
+                              <span><i class="fa fa-star orange"></i></span>
+                              <span><i class="fa fa-star orange"></i></span>
+                              <span><i class="fa fa-star orange"></i></span>
+                              <span><i class="fa fa-star lightgrey"></i></span>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- end main-mask -->
+                      </div>
+                      <!-- end t-list-img -->
+
+                      <div class="list-info t-list-info">
+                        <h3 class="block-title">
+                          <a href="tour-detail-left-sidebar.html">Bangkok</a>
+                        </h3>
+                        <p class="block-minor">2 Adults, 02 Kids</p>
+                        <p>
+                          Lorem ipsum dolor sit amet, ad duo fugit aeque
+                          fabulas, in lucilius prodesset pri. Veniam delectus ei
+                          vis. Est atqui timeam mnesarchum at, pro an eros
+                          perpetua ullamcorper.
+                        </p>
+                        <a
+                          href="tour-detail-left-sidebar.html"
+                          class="btn btn-orange btn-lg"
+                          >View More</a
+                        >
+                      </div>
+                      <!-- end t-list-info -->
+                    </div>
+                    <!-- end list-content -->
+                  </div>
+                  <!-- end t-list-block -->
+                </div>
+                <!-- end available-tours -->
+
+                <div class="pages pagination-margin">
+                  <ol class="pagination justify-content-center">
+                    <li>
+                      <a href="#" aria-label="Previous"
+                        ><span aria-hidden="true"
+                          ><i class="fa fa-angle-left"></i></span
+                      ></a>
+                    </li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li>
+                      <a href="#" aria-label="Next"
+                        ><span aria-hidden="true"
+                          ><i class="fa fa-angle-right"></i></span
+                      ></a>
+                    </li>
+                  </ol>
+                </div>
+                <!-- end pages -->
+              </div>
+              <!-- end columns -->
+
+              <div class="col-12 col-md-12 col-lg-3 side-bar right-side-bar">
+                <div class="side-bar-block booking-form-block">
+                  <h2 class="selected-price">$568.00 <span>Orlando</span></h2>
+
+                  <div class="booking-form">
+                    <h3>Book Tour</h3>
+                    <p>Find your dream tour today</p>
+
+                    <form
+                      id="tour_frm_booking"
+                      name="tour_frm_booking"
+                      method="post"
+                    >
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="First Name"
+                          id="txt_first_name"
+                          name="txt_first_name"
+                        />
+                      </div>
+
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Last Name"
+                          id="txt_last_name"
+                          name="txt_last_name"
+                        />
+                      </div>
+
+                      <div class="form-group">
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="Email"
+                          id="txt_email"
+                          name="txt_email"
+                        />
+                      </div>
+
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Phone"
+                          id="txt_phone"
+                          name="txt_phone"
+                        />
+                      </div>
+
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Country"
+                          id="txt_country"
+                          name="txt_country"
+                        />
+                      </div>
+
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control dpd3"
+                          placeholder="Booking Date"
+                          id="txt_booking_date"
+                          name="txt_booking_date"
+                        />
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-6 col-lg-12 col-xl-6 no-sp-r">
+                          <div class="form-group right-icon">
+                            <select
+                              class="form-control"
+                              id="txt_adults"
+                              name="txt_adults"
+                            >
+                              <option selected value="">Adults</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                            </select>
+                            <i class="fa fa-angle-down"></i>
+                          </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-12 col-xl-6 no-sp-l">
+                          <div class="form-group right-icon">
+                            <select
+                              class="form-control"
+                              id="txt_children"
+                              name="txt_children"
+                            >
+                              <option selected value="">Children</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                            </select>
+                            <i class="fa fa-angle-down"></i>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="form-group right-icon">
+                        <select
+                          class="form-control"
+                          id="txt_pay_method"
+                          name="txt_pay_method"
+                        >
+                          <option selected value="">Payment Method</option>
+                          <option value="Credit Card">Credit Card</option>
+                          <option value="Paypal">Paypal</option>
+                        </select>
+                        <i class="fa fa-angle-down"></i>
+                      </div>
+
+                      <div class="checkbox custom-check">
+                        <input type="checkbox" id="check01" name="checkbox" />
+                        <label for="check01"
+                          ><span><i class="fa fa-check"></i></span>By
+                          continuing, you are agree to the
+                          <a href="#">Terms & Conditions.</a></label
+                        >
+                      </div>
+                      <div class="col-md-12 text-center" id="result_msg"></div>
+                      <button
+                        class="btn btn-block btn-orange w-100"
+                        type="submit"
+                        id="submit"
+                        name="submit"
+                      >
+                        Confirm Booking
+                      </button>
+                    </form>
+                  </div>
+                  <!-- end booking-form -->
+                </div>
+                <!-- end side-bar-block -->
+
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-12">
+                    <div class="side-bar-block main-block ad-block">
+                      <div class="main-img ad-img">
+                        <a href="#">
+                          <img
+                            src="assets/img/car-ad.jpg"
+                            class="img-fluid"
+                            alt="car-ad"
+                          />
+                          <div class="ad-mask">
+                            <div class="ad-text">
+                              <span>Luxury</span>
+                              <h2>Car</h2>
+                              <span>Offer</span>
+                            </div>
+                            <!-- end ad-text -->
+                          </div>
+                          <!-- end columns -->
+                        </a>
+                      </div>
+                      <!-- end ad-img -->
+                    </div>
+                    <!-- end side-bar-block -->
+                  </div>
+                  <!-- end columns -->
+
+                  <div class="col-12 col-md-6 col-lg-12">
+                    <div class="side-bar-block support-block">
+                      <h3>Need Help</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet, ad duo fugit aeque fabulas,
+                        in lucilius prodesset pri. Veniam delectus ei vis. Est
+                        atqui timeam mnesarchum.
+                      </p>
+                      <div class="support-contact">
+                        <span><i class="fa fa-phone"></i></span>
+                        <p>+1 123 1234567</p>
+                      </div>
+                      <!-- end support-contact -->
+                    </div>
+                    <!-- end side-bar-block -->
+                  </div>
+                  <!-- end columns -->
+                </div>
+                <!-- end row -->
+              </div>
+              <!-- end columns -->
+            </div>
+            <!-- end row -->
+          </div>
+          <!-- end container -->
+        </div>
+        <!-- end tour-detail -->
+      </section>
+      <!-- end innerpage-wrapper -->
+
+      <!--======================= BEST FEATURES =====================-->
+      <section id="best-features" class="banner-padding black-features">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-3">
+              <div class="b-feature-block">
+                <span><i class="fa fa-dollar"></i></span>
+                <h3>Best Price Guarantee</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, ad duo fugit aeque fabulas, in
+                  lucilius prodesset pri. Veniam delectus ei vis.
+                </p>
+              </div>
+              <!-- end b-feature-block -->
+            </div>
+            <!-- end columns -->
+
+            <div class="col-md-6 col-lg-3">
+              <div class="b-feature-block">
+                <span><i class="fa fa-lock"></i></span>
+                <h3>Safe and Secure</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, ad duo fugit aeque fabulas, in
+                  lucilius prodesset pri. Veniam delectus ei vis.
+                </p>
+              </div>
+              <!-- end b-feature-block -->
+            </div>
+            <!-- end columns -->
+
+            <div class="col-md-6 col-lg-3">
+              <div class="b-feature-block">
+                <span><i class="fa fa-thumbs-up"></i></span>
+                <h3>Best Travel Agents</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, ad duo fugit aeque fabulas, in
+                  lucilius prodesset pri. Veniam delectus ei vis.
+                </p>
+              </div>
+              <!-- end b-feature-block -->
+            </div>
+            <!-- end columns -->
+
+            <div class="col-md-6 col-lg-3">
+              <div class="b-feature-block">
+                <span><i class="fa fa-bars"></i></span>
+                <h3>Travel Guidelines</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, ad duo fugit aeque fabulas, in
+                  lucilius prodesset pri. Veniam delectus ei vis.
+                </p>
+              </div>
+              <!-- end b-feature-block -->
+            </div>
+            <!-- end columns -->
+          </div>
+          <!-- end row -->
+        </div>
+        <!-- end container -->
+      </section>
+      <!-- end best-features -->
+
+      <!--========================= NEWSLETTER-1 ==========================-->
+      <section id="newsletter-1" class="section-padding back-size newsletter">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-12 col-lg-12 col-xl-12 text-center">
+              <h2>Subscribe Our Newsletter</h2>
+              <p>Subscibe to receive our interesting updates</p>
+              <form>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input
+                      type="email"
+                      class="form-control input-lg"
+                      placeholder="Enter your email address"
+                      required
+                    />
+                    <span class="input-group-btn"
+                      ><button class="btn btn-lg">
+                        <i class="fa fa-envelope"></i></button
+                    ></span>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- end columns -->
+          </div>
+          <!-- end row -->
+        </div>
+        <!-- end container -->
+      </section>
+      <!-- end newsletter-1 -->
+
+      <!--======================= FOOTER =======================-->
+      <section id="footer" class="ftr-heading-o ftr-heading-mgn-1">
+        <div
+          id="footer-top"
+          class="banner-padding ftr-top-black ftr-text-white"
+        >
+          <div class="container">
+            <div class="row">
+              <div
+                class="col-12 col-md-6 col-lg-3 col-xl-3 footer-widget ftr-contact"
+              >
+                <h3 class="footer-heading">CONTACT US</h3>
+                <ul class="list-unstyled">
+                  <li>
+                    <span><i class="fa fa-map-marker"></i></span>29 Land St,
+                    Lorem City, CA
+                  </li>
+                  <li>
+                    <span><i class="fa fa-phone"></i></span>+00 123 4567
+                  </li>
+                  <li>
+                    <span><i class="fa fa-envelope"></i></span
+                    >info@starhotel.com
+                  </li>
+                </ul>
+              </div>
+              <!-- end columns -->
+
+              <div
+                class="col-12 col-md-6 col-lg-2 col-xl-2 footer-widget ftr-links"
+              >
+                <h3 class="footer-heading">COMPANY</h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Flight</a></li>
+                  <li><a href="#">Hotel</a></li>
+                  <li><a href="#">Tours</a></li>
+                  <li><a href="#">Cruise</a></li>
+                  <li><a href="#">Cars</a></li>
+                </ul>
+              </div>
+              <!-- end columns -->
+
+              <div
+                class="col-12 col-md-6 col-lg-3 col-xl-3 footer-widget ftr-links ftr-pad-left"
+              >
+                <h3 class="footer-heading">RESOURCES</h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">Blogs</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Login</a></li>
+                  <li><a href="#">Register</a></li>
+                  <li><a href="#">Site Map</a></li>
+                </ul>
+              </div>
+              <!-- end columns -->
+
+              <div
+                class="col-12 col-md-6 col-lg-4 col-xl-4 footer-widget ftr-about"
+              >
+                <h3 class="footer-heading">ABOUT US</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                  aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                  nostrud exerci tation ullamcorper suscipit.
+                </p>
+                <ul class="social-links list-inline list-unstyled">
+                  <li class="list-inline-item">
+                    <a href="#"
+                      ><span><i class="fa fa-facebook"></i></span
+                    ></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#"
+                      ><span><i class="fa fa-twitter"></i></span
+                    ></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#"
+                      ><span><i class="fa fa-google-plus"></i></span
+                    ></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#"
+                      ><span><i class="fa fa-pinterest-p"></i></span
+                    ></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#"
+                      ><span><i class="fa fa-instagram"></i></span
+                    ></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#"
+                      ><span><i class="fa fa-linkedin"></i></span
+                    ></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#"
+                      ><span><i class="fa fa-youtube-play"></i></span
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <!-- end columns -->
+            </div>
+            <!-- end row -->
+          </div>
+          <!-- end container -->
+        </div>
+        <!-- end footer-top -->
+
+        <div id="footer-bottom" class="ftr-bot-black">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-6 col-xl-6" id="copyright">
+                <p>© 2017 <a href="#">StarTravel</a>. All rights reserved.</p>
+              </div>
+              <!-- end columns -->
+
+              <div class="col-12 col-md-6 col-lg-6 col-xl-6" id="terms">
+                <ul class="list-unstyled list-inline">
+                  <li class="list-inline-item">
+                    <a href="#">Terms & Condition</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">Privacy Policy</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- end columns -->
+            </div>
+            <!-- end row -->
+          </div>
+          <!-- end container -->
+        </div>
+        <!-- end footer-bottom -->
+      </section>
+      <!-- end footer -->
+    </div>
 
     <!-- Page Scripts Starts -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/bootstrap-5.3.2.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/custom-navigation.js"></script>
+    <script src="js/custom-date-picker.js"></script>
+    <script src="js/custom-slick.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/custom-validation.js"></script>
     <!-- Page Scripts Ends -->
   </body>
 </html>

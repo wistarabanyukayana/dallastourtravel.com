@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Dallas Tour & Travel - Segera Tiba</title>
+    <title>Dallas Tour & Travel - Paket Signature</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link
@@ -63,150 +63,103 @@
   </head>
 
   <body>
-    <!--====== LOADER =====-->
-    <div class="loader"></div>
+    <div class="wrapper">
+      <!--====== LOADER =====-->
+      <div class="loader"></div>
 
-    <!--===== INNERPAGE-WRAPPER ====-->
-    <section class="innerpage-wrapper h-100">
-      <div id="coming-soon-text" class="section-padding back-size h-100">
-        <div class="container h-100">
-          <div class="row h-100 align-items-center">
-            <div class="col-md-12">
-              <h3 class="company-name">
-                <a href="#"><img id="logo" src="assets/img/logo.png" /></a>
-              </h3>
-              <h2>Segera Tiba</h2>
-              <p>Halaman ini dalam proses pembaharuan.</p>
-              <a href="/" class="btn btn-w-border">Kembali ke Beranda</a>
+      <!--======== SEARCH-OVERLAY =========-->
+      <div id="myOverlay" class="overlay">
+        <span class="closebtn" onclick="closeSearch()" title="Close Overlay"
+          >×</span
+        >
+        <div class="overlay-content">
+          <form>
+            <div class="form-group">
+              <div class="input-group">
+                <input
+                  class="float-left"
+                  type="text"
+                  placeholder="Search.."
+                  name="search"
+                />
+                <button class="float-left" type="submit">
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
+              <!-- end input-group -->
             </div>
-            <!-- end columns -->
-          </div>
-          <!-- end row -->
+            <!-- end form-group -->
+          </form>
         </div>
-        <!-- end container -->
+        <!-- end overlay-content -->
       </div>
-      <!-- end coming-soon-text -->
-    </section>
-    <!-- end innerpage-wrapper -->
+      <!-- end overlay -->
 
-    <!--======================= FOOTER =======================-->
-    <section id="footer" class="ftr-heading-o ftr-heading-mgn-1">
-      <div id="footer-top" class="banner-padding ftr-top-grey ftr-text-white">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div
-              class="col-12 col-md-6 col-lg-4 col-xl-4 footer-widget ftr-about"
-            >
-              <h3 class="footer-heading">Dallas Tour & Travel</h3>
-              <p>
-                PT. Dallas Laras Wisata (Dallas) berupaya untuk selalu
-                meningkatkan kualitas pelayanan dengan menghadirkan berbagai
-                fasilitas dan program yang sesuai dengan kebutuhan jamaah. Kami
-                berharap dapat terus menjadi bagian dari perjalanan spiritual
-                Anda dan bersama-sama meraih ridha Allah SWT.
-              </p>
-              <ul class="social-links list-inline list-unstyled">
-                <li class="list-inline-item">
-                  <a href="https://web.facebook.com/DALLASTOURTRAVEL"
-                    ><span><i class="fa fa-facebook"></i></span
-                  ></a>
-                </li>
-                <li class="list-inline-item" style="display: none">
-                  <a href="#"
-                    ><span><i class="fa fa-twitter"></i></span
-                  ></a>
-                </li>
-                <li class="list-inline-item" style="display: none">
-                  <a href="#"
-                    ><span><i class="fa fa-google-plus"></i></span
-                  ></a>
-                </li>
-                <li class="list-inline-item" style="display: none">
-                  <a href="#"
-                    ><span><i class="fa fa-pinterest-p"></i></span
-                  ></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.instagram.com/officialdallastourtravel"
-                    ><span><i class="fa fa-instagram"></i></span
-                  ></a>
-                </li>
-                <li class="list-inline-item">
-                  <a
-                    href="https://www.linkedin.com/in/pt-delta-laras-wisata-b1a369313"
-                    ><span><i class="fa fa-linkedin"></i></span
-                  ></a>
-                </li>
-                <li class="list-inline-item" style="display: none">
-                  <a href="#"
-                    ><span><i class="fa fa-youtube-play"></i></span
-                  ></a>
-                </li>
-              </ul>
-            </div>
-            <!-- end columns -->
-
-            <div
-              class="col-12 col-md-6 col-lg-3 col-xl-3 footer-widget ftr-contact"
-            >
-              <h3 class="footer-heading">Hubungi Kami</h3>
-              <ul class="list-unstyled">
-                <li>
-                  <span><i class="fa fa-map-marker"></i></span>Jl. Raya
-                  Kalibata, Jakarta
-                </li>
-                <li>
-                  <span><i class="fa fa-phone"></i></span>(021) 80878321
-                </li>
-                <li>
-                  <span><i class="fa fa-envelope"></i></span
-                  >admin@dallastourtravel.com
-                </li>
-              </ul>
-            </div>
-            <!-- end columns -->
-
-            <div
-              class="col-12 col-md-6 col-lg-2 col-xl-2 footer-widget ftr-links"
-            >
-              <h3 class="footer-heading">Perusahaan</h3>
-              <ul class="list-unstyled">
-                <li><a href="#">Beranda</a></li>
-                <li><a href="#">Produk & Layanan</a></li>
-                <li><a href="#">Berita</a></li>
-                <li><a href="#">Galeri</a></li>
-                <li><a href="#">Tentang Dallas</a></li>
-              </ul>
-            </div>
-            <!-- end columns -->
-            <!-- end columns -->
-          </div>
-          <!-- end row -->
-        </div>
-        <!-- end container -->
-      </div>
-      <!-- end footer-top -->
-
-      <div id="footer-bottom" class="ftr-bot-black">
+      <!--============= TOP-BAR ===========-->
+      <div id="top-bar" class="tb-text-white">
         <div class="container">
           <div class="row">
-            <div class="col-12 col-md-6 col-lg-6 col-xl-6" id="copyright">
-              <p>
-                © 2024 <a href="#">PT. Delta Lara Wisata</a>. Hak Cipta
-                Dilindungi.
-              </p>
+            <div class="col-12 col-md-6">
+              <div id="info">
+                <ul class="list-unstyled list-inline">
+                  <li class="list-inline-item">
+                    <span><i class="fa fa-map-marker"></i></span>Jl. Raya
+                    Kalibata, Jakarta
+                  </li>
+                  <li class="list-inline-item">
+                    <span><i class="fa fa-phone"></i></span>(021) 80878321
+                  </li>
+                </ul>
+              </div>
+              <!-- end info -->
             </div>
             <!-- end columns -->
-
-            <div class="col-12 col-md-6 col-lg-6 col-xl-6" id="terms">
-              <ul class="list-unstyled list-inline">
-                <li class="list-inline-item">
-                  <a href="#">Syarat & Ketentuan</a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">Kebijakan Privasi</a>
-                </li>
-              </ul>
+            <div class="col-12 col-md-6">
+              <div id="links">
+                <ul class="list-unstyled list-inline">
+                  <li class="list-inline-item">
+                    <a href="login-1.html"
+                      ><span><i class="fa fa-lock"></i></span>Masuk</a
+                    >
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="registration-1.html"
+                      ><span><i class="fa fa-plus"></i></span>Daftar</a
+                    >
+                  </li>
+                  <li class="list-inline-item">
+                    <form>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <div class="form-group currency">
+                            <span><i class="fa fa-angle-down"></i></span>
+                            <select class="form-control">
+                              <option value="">Rp</option>
+                              <option value="">$</option>
+                              <option value="">£</option>
+                            </select>
+                          </div>
+                          <!-- end form-group -->
+                        </li>
+                        <li class="list-inline-item">
+                          <div class="form-group language">
+                            <span><i class="fa fa-angle-down"></i></span>
+                            <select class="form-control">
+                              <option value="">ID</option>
+                              <option value="">EN</option>
+                              <option value="">UR</option>
+                              <option value="">FR</option>
+                              <option value="">IT</option>
+                            </select>
+                          </div>
+                          <!-- end form-group -->
+                        </li>
+                      </ul>
+                    </form>
+                  </li>
+                </ul>
+              </div>
+              <!-- end links -->
             </div>
             <!-- end columns -->
           </div>
@@ -214,16 +167,391 @@
         </div>
         <!-- end container -->
       </div>
-      <!-- end footer-bottom -->
-    </section>
-    <!-- end footer -->
+      <!-- end top-bar -->
+
+      <nav
+        class="navbar navbar-expand-xl sticky-top navbar-custom main-navbar p-1"
+        id="mynavbar-1"
+      >
+        <div class="container">
+          <a href="#" class="navbar-brand py-1 m-0"
+            ><img id="logo" src="assets/img/logo.png"
+          /></a>
+          <div class="header-search d-xl-none my-auto ms-auto py-1">
+            <a href="#" class="search-button" onClick="openSearch()"
+              ><span><i class="fa fa-search"></i></span
+            ></a>
+          </div>
+          <button
+            class="navbar-toggler ms-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            id="sidebarCollapse"
+          >
+            <i class="fa fa-navicon py-1"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="myNavbar1">
+            <ul class="navbar-nav ms-auto navbar-search-link">
+              <li class="nav-item dropdown">
+                <a
+                  href="/"
+                  class="nav-link"
+                  id="navbarDropdown"
+                  role="button"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Beranda</a
+                >
+              </li>
+              <li class="nav-item dropdown active">
+                <a
+                  href="produk-layanan.html"
+                  class="nav-link"
+                  data-bs-toggle="dropdown"
+                  style="text-wrap: nowrap"
+                  >Produk & Layanan<span><i class="fa fa-angle-down"></i></span
+                ></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="haji.html">Haji</a>
+                  </li>
+                  <li class="active">
+                    <a class="dropdown-item" href="umroh.html">Umroh</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="wisata-halal.html"
+                      >Wisata Halal</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="artikel.html" class="nav-link">Artikel</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="galeri.html" class="nav-link">Galeri</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="tentang-dallas.html" class="nav-link"
+                  >Tentang Dallas</a
+                >
+              </li>
+              <li class="dropdown-item search-btn">
+                <a href="#" class="search-button" onClick="openSearch()"
+                  ><span><i class="fa fa-search"></i></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <!-- end navbar collapse -->
+        </div>
+        <!-- End container -->
+      </nav>
+      <div class="sidenav-content">
+        <!-- Sidebar  -->
+        <nav id="sidebar" class="sidenav">
+          <h2 id="web-name">
+            <span
+              ><div id="logo-container">
+                <a href="#" class="navbar-brand py-1 my-auto pl-md-2 m-0"
+                  ><img id="logo" src="assets/img/logo.png"
+                /></a></div
+            ></span>
+          </h2>
+
+          <div id="main-menu">
+            <div id="dismiss">
+              <button class="btn" id="closebtn">&times;</button>
+            </div>
+            <div class="list-group panel">
+              <a href="/" class="items-list active" aria-expanded="false">
+                <span><i class="fa fa-home link-icon"></i></span>Beranda</a
+              >
+
+              <a
+                class="items-list"
+                href="produk-layanan.html"
+                data-bs-toggle="collapse"
+                ><span><i class="fa fa-th-large link-icon"></i></span>Produk &
+                Layanan<span><i class="fa fa-chevron-down arrow"></i></span
+              ></a>
+              <div class="collapse sub-menu" id="product&service-links">
+                <a class="items-list" href="haji.html">Haji</a>
+                <a class="items-list" href="umroh.html">Umroh</a>
+                <a class="items-list" href="wisata-halal.html">Wisata Halal</a>
+              </div>
+              <!-- end sub-menu -->
+
+              <a class="items-list" href="artikel.html"
+                ><span><i class="fa fa-newspaper-o link-icon"></i></span
+                >Artikel</a
+              >
+
+              <a class="items-list" href="galeri.html"
+                ><span><i class="fa fa-picture-o link-icon"></i></span>Galeri</a
+              >
+
+              <a class="items-list" href="tentang-dallas.html"
+                ><span><i class="fa fa-building link-icon"></i></span>Tentang
+                Dallas</a
+              >
+            </div>
+            <!-- End list-group panel -->
+          </div>
+          <!-- End main-menu -->
+        </nav>
+      </div>
+      <!-- End sidenav-content -->
+
+      <!--================ PAGE-COVER ================-->
+      <section class="page-cover" id="cover-tour-detail">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="page-title">Umroh Signature</h1>
+              <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Beranda</a></li>
+                <li class="breadcrumb-item">Umroh Signature</li>
+              </ul>
+            </div>
+            <!-- end columns -->
+          </div>
+          <!-- end row -->
+        </div>
+        <!-- end container -->
+      </section>
+      <!-- end page-cover -->
+
+      <section class="page-cover style style2">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="row">
+                <div class="col">
+                  <div class="row">
+                    <div class="col-md-auto icon">
+                      <li class="fa fa-archive"></li>
+                    </div>
+                    <div class="col page-cover-detail-box">
+                      <div class="row page-cover-detail">
+                        <p>Tipe Paket</p>
+                        <h4>Umroh</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="row">
+                    <div class="col-md-auto icon">
+                      <li class="fa fa-clock-o"></li>
+                    </div>
+                    <div class="col page-cover-detail-box">
+                      <div class="row page-cover-detail">
+                        <p>Durasi</p>
+                        <h4>9 Hari</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="row">
+                    <div class="col-md-auto icon">
+                      <li class="fa fa-plane"></li>
+                    </div>
+                    <div class="col page-cover-detail-box">
+                      <div class="row page-cover-detail">
+                        <p>Maskapai</p>
+                        <h4>
+                          <img
+                            src="assets/img/logo-garuda.png"
+                            style="
+                              display: inline;
+                              width: 20px;
+                              margin-right: 3px;
+                            "
+                          />Garuda /
+                          <img
+                            src="assets/img/logo-saudia.png"
+                            style="
+                              display: inline;
+                              width: 20px;
+                              margin-right: 3px;
+                            "
+                          />Saudia
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="row">
+                    <div class="col-md-auto icon">
+                      <li class="fa fa-map-marker"></li>
+                    </div>
+                    <div class="col page-cover-detail-box">
+                      <div class="row page-cover-detail">
+                        <p>Jakarta</p>
+                        <h4>16 & 20 Agustus 2024</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col"></div>
+          </div>
+        </div>
+      </section>
+
+      <!--======================= FOOTER =======================-->
+      <section id="footer" class="ftr-heading-o ftr-heading-mgn-1">
+        <div id="footer-top" class="banner-padding ftr-top-grey ftr-text-white">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div
+                class="col-12 col-md-6 col-lg-4 col-xl-4 footer-widget ftr-about"
+              >
+                <h3 class="footer-heading">Dallas Tour & Travel</h3>
+                <p>
+                  PT. Dallas Laras Wisata (Dallas) berupaya untuk selalu
+                  meningkatkan kualitas pelayanan dengan menghadirkan berbagai
+                  fasilitas dan program yang sesuai dengan kebutuhan jamaah.
+                  Kami berharap dapat terus menjadi bagian dari perjalanan
+                  spiritual Anda dan bersama-sama meraih ridha Allah SWT.
+                </p>
+                <ul class="social-links list-inline list-unstyled">
+                  <li class="list-inline-item">
+                    <a href="https://web.facebook.com/DALLASTOURTRAVEL"
+                      ><span><i class="fa fa-facebook"></i></span
+                    ></a>
+                  </li>
+                  <li class="list-inline-item" style="display: none">
+                    <a href="#"
+                      ><span><i class="fa fa-twitter"></i></span
+                    ></a>
+                  </li>
+                  <li class="list-inline-item" style="display: none">
+                    <a href="#"
+                      ><span><i class="fa fa-google-plus"></i></span
+                    ></a>
+                  </li>
+                  <li class="list-inline-item" style="display: none">
+                    <a href="#"
+                      ><span><i class="fa fa-pinterest-p"></i></span
+                    ></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://www.instagram.com/officialdallastourtravel"
+                      ><span><i class="fa fa-instagram"></i></span
+                    ></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a
+                      href="https://www.linkedin.com/in/pt-delta-laras-wisata-b1a369313"
+                      ><span><i class="fa fa-linkedin"></i></span
+                    ></a>
+                  </li>
+                  <li class="list-inline-item" style="display: none">
+                    <a href="#"
+                      ><span><i class="fa fa-youtube-play"></i></span
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <!-- end columns -->
+
+              <div
+                class="col-12 col-md-6 col-lg-3 col-xl-3 footer-widget ftr-contact"
+              >
+                <h3 class="footer-heading">Hubungi Kami</h3>
+                <ul class="list-unstyled">
+                  <li>
+                    <span><i class="fa fa-map-marker"></i></span>Jl. Raya
+                    Kalibata, Jakarta
+                  </li>
+                  <li>
+                    <span><i class="fa fa-phone"></i></span>(021) 80878321
+                  </li>
+                  <li>
+                    <span><i class="fa fa-envelope"></i></span
+                    >info@dallastourtravel.com
+                  </li>
+                </ul>
+              </div>
+              <!-- end columns -->
+
+              <div
+                class="col-12 col-md-6 col-lg-2 col-xl-2 footer-widget ftr-links"
+              >
+                <h3 class="footer-heading">Perusahaan</h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">Beranda</a></li>
+                  <li><a href="/produk-layanan">Produk & Layanan</a></li>
+                  <li><a href="/artikel">Artikel</a></li>
+                  <li><a href="/galeri">Galeri</a></li>
+                  <li><a href="/tentang-dallas">Tentang Dallas</a></li>
+                </ul>
+              </div>
+              <!-- end columns -->
+              <!-- end columns -->
+            </div>
+            <!-- end row -->
+          </div>
+          <!-- end container -->
+        </div>
+        <!-- end footer-top -->
+
+        <div id="footer-bottom" class="ftr-bot-black">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-6 col-xl-6" id="copyright">
+                <p>
+                  © 2024 <a href="#">PT. Delta Lara Wisata</a>. Hak Cipta
+                  Dilindungi.
+                </p>
+              </div>
+              <!-- end columns -->
+
+              <div class="col-12 col-md-6 col-lg-6 col-xl-6" id="terms">
+                <ul class="list-unstyled list-inline">
+                  <li class="list-inline-item">
+                    <a href="/syarat-ketentuan">Syarat & Ketentuan</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="/kebijakan-privasi">Kebijakan Privasi</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- end columns -->
+            </div>
+            <!-- end row -->
+          </div>
+          <!-- end container -->
+        </div>
+        <!-- end footer-bottom -->
+      </section>
+      <!-- end footer -->
+    </div>
 
     <!-- Page Scripts Starts -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/bootstrap-5.3.2.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/custom-navigation.js"></script>
+    <script src="js/custom-date-picker.js"></script>
+    <script src="js/custom-slick.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/custom-validation.js"></script>
     <!-- Page Scripts Ends -->
   </body>
 </html>

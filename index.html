@@ -142,87 +142,13 @@
       </div>
       <!-- end overlay -->
 
-      <!--============= TOP-BAR ===========-->
-      <div id="top-bar" class="tb-text-white" style="display: none">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-6">
-              <div id="info">
-                <ul class="list-unstyled list-inline">
-                  <li class="list-inline-item">
-                    <span><i class="fa fa-map-marker"></i></span>Jl. Raya
-                    Kalibata, Jakarta
-                  </li>
-                  <li class="list-inline-item">
-                    <span><i class="fa fa-phone"></i></span>(021) 80878321
-                  </li>
-                </ul>
-              </div>
-              <!-- end info -->
-            </div>
-            <!-- end columns -->
-            <div class="col-12 col-md-6">
-              <div id="links">
-                <ul class="list-unstyled list-inline">
-                  <li class="list-inline-item">
-                    <a href="login-1.html"
-                      ><span><i class="fa fa-lock"></i></span>Masuk</a
-                    >
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="registration-1.html"
-                      ><span><i class="fa fa-plus"></i></span>Daftar</a
-                    >
-                  </li>
-                  <li class="list-inline-item">
-                    <form>
-                      <ul class="list-inline">
-                        <li class="list-inline-item">
-                          <div class="form-group currency">
-                            <span><i class="fa fa-angle-down"></i></span>
-                            <select class="form-control">
-                              <option value="">Rp</option>
-                              <option value="">$</option>
-                              <option value="">£</option>
-                            </select>
-                          </div>
-                          <!-- end form-group -->
-                        </li>
-                        <li class="list-inline-item">
-                          <div class="form-group language">
-                            <span><i class="fa fa-angle-down"></i></span>
-                            <select class="form-control">
-                              <option value="">ID</option>
-                              <option value="">EN</option>
-                              <option value="">UR</option>
-                              <option value="">FR</option>
-                              <option value="">IT</option>
-                            </select>
-                          </div>
-                          <!-- end form-group -->
-                        </li>
-                      </ul>
-                    </form>
-                  </li>
-                </ul>
-              </div>
-              <!-- end links -->
-            </div>
-            <!-- end columns -->
-          </div>
-          <!-- end row -->
-        </div>
-        <!-- end container -->
-      </div>
-      <!-- end top-bar -->
-
       <nav
         class="navbar navbar-expand-xl sticky-top navbar-custom main-navbar p-1"
         id="mynavbar-1"
       >
         <div class="container">
           <a href="#" class="navbar-brand py-1 m-0"
-            ><img id="logo" src="assets/img/logo.png"
+            ><img id="logo" src="assets/img/ftr-logo.png"
           /></a>
           <div class="header-search d-xl-none my-auto ms-auto py-1">
             <a href="#" class="search-button" onClick="openSearch()"
@@ -246,11 +172,10 @@
             <ul class="navbar-nav ms-auto navbar-search-link">
               <li class="nav-item dropdown active">
                 <a
-                  href="#"
+                  href="/"
                   class="nav-link"
                   id="navbarDropdown"
                   role="button"
-                  data-bs-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="false"
                   >Beranda</a
@@ -279,23 +204,13 @@
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a
-                  href="artikel.html"
-                  class="nav-link"
-                  data-bs-toggle="dropdown"
-                  >Artikel</a
-                >
+                <a href="artikel.html" class="nav-link">Artikel</a>
               </li>
               <li class="nav-item dropdown">
-                <a href="galeri.html" class="nav-link" data-bs-toggle="dropdown"
-                  >Galeri</a
-                >
+                <a href="galeri.html" class="nav-link">Galeri</a>
               </li>
               <li class="nav-item dropdown">
-                <a
-                  href="tentang-dallas.html"
-                  class="nav-link"
-                  data-bs-toggle="dropdown"
+                <a href="tentang-dallas.html" class="nav-link"
                   >Tentang Dallas</a
                 >
               </li>
@@ -327,20 +242,15 @@
               <button class="btn" id="closebtn">&times;</button>
             </div>
             <div class="list-group panel">
-              <a
-                href="#home-links"
-                class="items-list active"
-                data-bs-toggle="collapse"
-                aria-expanded="false"
-              >
+              <a href="/" class="items-list active" aria-expanded="false">
                 <span><i class="fa fa-home link-icon"></i></span>Beranda</a
               >
 
               <a
                 class="items-list"
-                href="#product&service-links"
+                href="produk-layanan.html"
                 data-bs-toggle="collapse"
-                ><span><i class="fa fa-plane link-icon"></i></span>Produk &
+                ><span><i class="fa fa-th-large link-icon"></i></span>Produk &
                 Layanan<span><i class="fa fa-chevron-down arrow"></i></span
               ></a>
               <div class="collapse sub-menu" id="product&service-links">
@@ -350,22 +260,17 @@
               </div>
               <!-- end sub-menu -->
 
-              <a class="items-list" href="#news-links" data-bs-toggle="collapse"
-                ><span><i class="fa fa-building link-icon"></i></span>Berita</a
+              <a class="items-list" href="artikel.html"
+                ><span><i class="fa fa-newspaper-o link-icon"></i></span
+                >Artikel</a
               >
 
-              <a
-                class="items-list"
-                href="#gallery-links"
-                data-bs-toggle="collapse"
-                ><span><i class="fa fa-globe link-icon"></i></span>Galeri</a
+              <a class="items-list" href="galeri.html"
+                ><span><i class="fa fa-picture-o link-icon"></i></span>Galeri</a
               >
 
-              <a
-                class="items-list"
-                href="#about-links"
-                data-bs-toggle="collapse"
-                ><span><i class="fa fa-ship link-icon"></i></span>Tentang
+              <a class="items-list" href="tentang-dallas.html"
+                ><span><i class="fa fa-building link-icon"></i></span>Tentang
                 Dallas</a
               >
             </div>
@@ -578,6 +483,7 @@
                         <img
                           src="assets/img/package-1.png"
                           class="img-fluid"
+                          style="width: 360px; height: 240px"
                           alt="package-img"
                         />
                       </a>
@@ -693,6 +599,7 @@
                         <img
                           src="assets/img/package-2.png"
                           class="img-fluid"
+                          style="width: 360px; height: 240px"
                           alt="package-img"
                         />
                       </a>
@@ -808,6 +715,7 @@
                         <img
                           src="assets/img/package-3.png"
                           class="img-fluid"
+                          style="width: 360px; height: 240px"
                           alt="package-img"
                         />
                       </a>
@@ -923,6 +831,7 @@
                         <img
                           src="assets/img/package-4.png"
                           class="img-fluid"
+                          style="width: 360px; height: 240px"
                           alt="package-img"
                         />
                       </a>
@@ -1038,6 +947,7 @@
                         <img
                           src="assets/img/package-5.png"
                           class="img-fluid"
+                          style="width: 360px; height: 240px"
                           alt="package-img"
                         />
                       </a>
@@ -1154,6 +1064,7 @@
                         <img
                           src="assets/img/package-6.png"
                           class="img-fluid"
+                          style="width: 360px; height: 240px"
                           alt="package-img"
                         />
                       </a>
@@ -1308,7 +1219,7 @@
                 </p>
                 <a
                   href="https://wa.link/nwwa6l"
-                  class="btn btn-black rounded align-baseline best-offer-price"
+                  class="btn btn-white rounded align-baseline best-offer-price"
                   >Hubungi Cabang!</a
                 >
               </div>

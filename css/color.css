@@ -246,7 +246,7 @@ p {
  ----------------------------------------------------- */
 
 #top-bar {
-  background-color: #000;
+  background-color: #010066;
 }
 
 #top-bar.colored {
@@ -351,15 +351,15 @@ nav.navbar#mynavbar-1
   > li
   .dropdown-menu
   li.active
-  > a,
+  > a:hover,
 nav.navbar#mynavbar-1
   .navbar-collapse
   > .navbar-nav
   > li
   .dropdown-menu
   li.active
-  a:hover {
-  background-color: orange;
+  a {
+  background-color: red;
   color: black;
 }
 
@@ -1910,7 +1910,7 @@ nav.navbar#mynavbar-3 .mega-dropdown-menu .dropdown-header {
 /************** BEST-OFFER ***************/
 
 #best-offer-banner .col-md-12 {
-  background: #fa1a1a;
+  background: #010066;
   color: white;
 }
 
@@ -1919,8 +1919,8 @@ nav.navbar#mynavbar-3 .mega-dropdown-menu .dropdown-header {
 }
 
 .best-offer-text .btn:hover {
-  background: white;
-  color: #faa61a;
+  background: black;
+  color: white;
 }
 
 /**************** CAR-OFFER ****************/
@@ -2451,8 +2451,8 @@ nav.navbar#mynavbar-3 .mega-dropdown-menu .dropdown-header {
   background: linear-gradient(
     to right,
     rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 1) 26%,
-    rgba(0, 0, 0, 0.6) 46%,
+    rgba(0, 0, 0, 1) 5%,
+    rgba(0, 0, 0, 0.6) 20%,
     rgba(0, 0, 0, 0) 64%,
     rgba(0, 0, 0, 0) 100%
   );
@@ -2463,7 +2463,7 @@ nav.navbar#mynavbar-3 .mega-dropdown-menu .dropdown-header {
 }
 
 .page-cover .breadcrumb li a {
-  color: #faa61a;
+  color: #fa1a1a;
 }
 
 .page-cover .breadcrumb > li + li::before,
@@ -2521,7 +2521,7 @@ nav.navbar#mynavbar-3 .mega-dropdown-menu .dropdown-header {
 }
 
 #cover-tour-detail {
-  background: url("../assets/img/cover-tour-detail.jpg") 50% 56%;
+  background: url("../assets/img/cover-tour-detail.jpg") 25% 40%;
   background-size: 140%;
   color: white;
 }
@@ -2716,16 +2716,16 @@ nav.navbar#mynavbar-3 .mega-dropdown-menu .dropdown-header {
 /*********** PAGE-COVER STYLE2 ***********/
 
 .page-cover.style2 {
-  background: #f2f2f2;
-  color: grey;
+  background: rgba(243, 248, 246, 255);
+  color: black;
 }
 
 .page-cover.style2 .breadcrumb li {
-  color: grey;
+  color: black;
 }
 
 .page-cover.style2 .breadcrumb li + li::before {
-  color: grey;
+  color: black;
 }
 
 /*********** PAGE-COVER STYLE3 ***********/
@@ -2912,7 +2912,7 @@ nav.navbar#mynavbar-3 .mega-dropdown-menu .dropdown-header {
 }
 
 .side-bar .booking-form-block .selected-price {
-  background: #faa61a;
+  background: #fa1a1a;
   color: white;
 }
 
@@ -3298,7 +3298,7 @@ nav.navbar#mynavbar-3 .mega-dropdown-menu .dropdown-header {
 }
 
 .detail-slider .features li .f-icon {
-  color: #faa61a;
+  color: #010066;
 }
 
 .detail-slider .features li .f-text p {

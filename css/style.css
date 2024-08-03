@@ -1484,7 +1484,6 @@ nav.navbar .container.padding {
 }
   
 .main-img .main-mask{
-	position:absolute;
 	bottom:0px;
 	width:100%;
 }
@@ -2894,6 +2893,10 @@ nav.navbar .container.padding {
 
 /*********** PAGE-COVER STYLE2 **********/
 
+.page-cover.style2 {
+	padding: 25px 0;
+}
+
 .page-cover.style2 .page-title{
 	float:left;
 }
@@ -2901,6 +2904,32 @@ nav.navbar .container.padding {
 .page-cover.style2 .breadcrumb{
 	text-align:right;
 	margin-top:13px;
+}
+
+.page-cover.style2 .icon {
+	background-color: #0074d2;
+	color: white;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 5px;
+	font-size: 1.5rem;
+}
+
+.page-cover-detail {
+	height: 100%;
+	align-items: center;
+	display: flex;
+	align-content: center;
+	text-align: justify;
+}
+
+.page-cover-detail p, .page-cover-detail h4 {
+	margin-bottom: 0;
+	font-size: 1rem;
 }
 
 /*********** PAGE-COVER STYLE4 ***********/
@@ -6195,4 +6224,16 @@ nav.navbar .container.padding {
 #flight_frm_booking textarea.error{
 	  background:#ff4d4d;
 	  border-color:red;
+}
+
+
+
+.listing-info {
+	padding: 25px 0;
+}
+
+.listing-info .container {
+	width: 100%;
+	padding: 0 15px;
+	margin: 0 auto;
 }
