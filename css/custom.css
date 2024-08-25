@@ -109,6 +109,24 @@ label {
   width: 100%;
 }
 
+.main-info.package-info a.btn_1.sold-out {
+  border-radius: 25px;
+  background-color: grey;
+  border: none;
+  outline: none;
+  pointer-events: none;
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 30px;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1;
+  transition: all 0.3s ease-in-out;
+  border-radius: 3px;
+  width: 100%;
+}
+
 .table {
   width: 100%;
   margin-bottom: 1rem;
