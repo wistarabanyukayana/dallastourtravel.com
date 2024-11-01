@@ -13,3 +13,6 @@ deployment:
     - /bin/cp syarat-ketentuan.html $DEPLOYPATH
     - /bin/cp kebijakan-privasi.html $DEPLOYPATH
     - /bin/cp 404.shtml $DEPLOYPATH
+    - /bin/cp -R css $DEPLOYPATH
+    - /bin/cp -R js $DEPLOYPATH
+    - /bin/cp -R assets $DEPLOYPATH
