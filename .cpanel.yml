@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/dallastourtravel/public_html/
+    - export DEPLOYPATH=/home/daly1882/public_html/
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp produk-layanan.html $DEPLOYPATH
     - /bin/cp artikel.html $DEPLOYPATH
