@@ -3850,11 +3850,11 @@ Author:			Wistara Banyu Kayana
 /************** PROFILE PAGE **************/
 
 @media (max-width: 991px) {
-  .user-profile . .card-header {
+  .user-profile .card-header {
     padding: 12px 30px;
   }
 
-  .user-profile . .card-body {
+  .user-profile .card-body {
     padding: 30px;
   }
 
@@ -4321,7 +4321,7 @@ Author:			Wistara Banyu Kayana
     top: 9px;
   }
 
-  #faq-page .content-side . .panel-title::after {
+  #faq-page .content-side .panel-title::after {
     right: -14px;
     width: 57px;
   }

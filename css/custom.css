@@ -180,3 +180,12 @@ table.details > tbody > tr > td {
   background: url("../assets/img/ftr-logo.png") no-repeat center;
   background-size: contain;
 }
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: red;
+}
+
+.table > tbody > tr > td {
+  white-space: nowrap;
+}

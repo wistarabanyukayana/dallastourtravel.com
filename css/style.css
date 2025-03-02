@@ -1535,7 +1535,15 @@ nav.navbar .container.padding {
 		Package Block
    ----------------------------------------------------- */
 
-#owl-package-offers .item {
+#owl-promo-offers .item {
+  padding: 10px 0;
+}
+
+#owl-haji-offers .item {
+  padding: 10px 0;
+}
+
+#owl-umroh-offers .item {
   padding: 10px 0;
 }
 

@@ -7,12 +7,12 @@ deployment:
     - /bin/cp artikel.html $DEPLOYPATH
     - /bin/cp galeri.html $DEPLOYPATH
     - /bin/cp tentang-dallas.html $DEPLOYPATH
-    - /bin/cp haji.html $DEPLOYPATH
-    - /bin/cp umroh.html $DEPLOYPATH
-    - /bin/cp wisata-halal.html $DEPLOYPATH
     - /bin/cp syarat-ketentuan.html $DEPLOYPATH
     - /bin/cp kebijakan-privasi.html $DEPLOYPATH
     - /bin/cp 404.shtml $DEPLOYPATH
+    - /bin/cp -R haji $DEPLOYPATH
+    - /bin/cp -R umroh $DEPLOYPATH
+    - /bin/cp -R wisata-halal $DEPLOYPATH
     - /bin/cp -R css $DEPLOYPATH
     - /bin/cp -R js $DEPLOYPATH
     - /bin/cp -R assets $DEPLOYPATH

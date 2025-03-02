@@ -111,9 +111,6 @@
 
   <body id="main-homepage">
     <div class="wrapper">
-      <!--====== LOADER =====-->
-      <div class="loader"></div>
-
       <!--======== SEARCH-OVERLAY =========-->
       <div id="myOverlay" class="overlay">
         <span class="closebtn" onClick="closeSearch()" title="Close Overlay"
@@ -147,7 +144,7 @@
         id="mynavbar-1"
       >
         <div class="container">
-          <a href="#" class="navbar-brand py-1 m-0"
+          <a href="/" class="navbar-brand py-1 m-0"
             ><img id="logo" src="assets/img/ftr-logo.png"
           /></a>
           <div class="header-search d-xl-none my-auto ms-auto py-1">
@@ -191,13 +188,13 @@
                 ></a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="haji.html">Haji</a>
+                    <a class="dropdown-item" href="/haji">Haji</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="umroh.html">Umroh</a>
+                    <a class="dropdown-item" href="/umroh">Umroh</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="wisata-halal.html"
+                    <a class="dropdown-item" href="/wisata-halal"
                       >Wisata Halal</a
                     >
                   </li>
@@ -231,7 +228,7 @@
           <h2 id="web-name">
             <span
               ><div id="logo-container">
-                <a href="#" class="navbar-brand py-1 my-auto pl-md-2 m-0"
+                <a href="/" class="navbar-brand py-1 my-auto pl-md-2 m-0"
                   ><img id="logo" src="assets/img/logo.png"
                 /></a></div
             ></span>
@@ -255,9 +252,9 @@
                 Layanan<span><i class="fa fa-chevron-down arrow"></i></span
               ></a>
               <div class="sub-menu collapse" id="product&service-links">
-                <a class="items-list" href="haji.html">Haji</a>
-                <a class="items-list" href="umroh.html">Umroh</a>
-                <a class="items-list" href="wisata-halal.html">Wisata Halal</a>
+                <a class="items-list" href="/haji">Haji</a>
+                <a class="items-list" href="/umroh">Umroh</a>
+                <a class="items-list" href="/wisata-halal">Wisata Halal</a>
               </div>
               <!-- end sub-menu -->
 
@@ -339,58 +336,253 @@
       </section>
       <!-- end flexslider-container -->
 
-      <!--========================= WELCOME SECTION =====================-->
-      <section id="about-content-2" class="section-padding">
+      <!--=============== PROMO OFFERS ===============-->
+      <section
+        id="package-offers"
+        style="padding-top: 124px; padding-bottom: 62px"
+      >
         <div class="container">
           <div class="row">
-            <div class="col-12 col-sm-12 col-lg-5 col-xl-4">
-              <div id="abt-cnt-2-img">
-                <img
-                  src="assets/img/about.png"
-                  class="img-fluid"
-                  alt="about-img"
-                />
-              </div>
-              <!-- end abt-cnt-2-img -->
-            </div>
-            <!-- end columns -->
-
-            <div class="col-12 col-sm-12 col-lg-7 col-xl-8">
-              <div id="abt-cnt-2-text">
+            <div class="col-md-12">
+              <div class="page-heading">
                 <h2>
-                  Ahlan wa Sahlan fi<span class="outer-title"
+                  <span class="outer-title"
                     ><img class="icon" src="./assets/img/icon.png" /><span
                       class="inner-title"
                     >
-                      Delta <span class="text-title">Laras Wisata</span></span
+                      <span class="text-title">PAKET PROMO</span></span
                     ></span
                   >
                 </h2>
-                <p>
-                  <strong
-                    >Assalammualaikum Warahmatullahi Wabarakatu.....</strong
-                  >
-                  <br />
-                  <br />
-                  PT. Delata Laras Wisata (Dallas) merupakan perusahaan yang
-                  berdedikasi dalam menyediakan layanan perjalanan ibadah Umroh
-                  dan Haji. Dilandasi oleh semangat untuk memberikan pelayanan
-                  terbaik, kami berkomitmen untuk mengantarkan setiap jamaah
-                  dengan aman, nyaman, dan khusyuk dalam melaksanakan ibadah di
-                  Tanah Suci. Kami juga senantiasa berkomitmen pada prinsip
-                  transparansi, integritas, dan pelayanan prima. Kami berharap
-                  dapat terus menjadi bagian dari perjalanan spiritual Anda dan
-                  bersama-sama meraih ridha Allah SWT.
-                  <br />
-                  <br />
-                  <strong
-                    >Wassalamu'alaikum Warahmatullahi Wabarakatuh,
-                  </strong>
-                  <br /><span>Komisaris Utama Ujang Ridwan Abdullah</span>
-                </p>
-                <!-- end row -->
+                <hr class="heading-line" />
               </div>
-              <!-- end abt-cnt-2-text -->
+              <!-- end page-heading -->
+
+              <div
+                class="owl-carousel owl-theme owl-custom-arrow"
+                id="owl-promo-offers"
+              >
+                <div class="item rounded">
+                  <div class="main-block package-block">
+                    <div class="main-img">
+                      <a href="#">
+                        <img
+                          src="assets/img/pkg-umroh-3.jpg"
+                          class="img-fluid"
+                          style="width: 360px; height: 240px"
+                          alt="package-img"
+                        />
+                      </a>
+                      <div class="main-mask">
+                        <ul class="list-unstyled list-inline offer-price-1">
+                          <li class="list-inline-item price">
+                            Rp35.900.000<span class="divider">|</span
+                            ><span class="pkg">QUAD</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- end main-mask -->
+                    </div>
+                    <!-- end offer-img -->
+
+                    <div class="main-info package-info">
+                      <!-- end arrow -->
+                      <table class="mt-1 mb-0 details table table-borderless">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <i class="fa fa-calendar"></i>
+                            </td>
+                            <td>Jadwal</td>
+                            <td>2, 13, 23 Juli; 26 Ags; 2, 24 Sep 2025</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="fa fa-clock-o"></i>
+                            </td>
+                            <td>Durasi</td>
+                            <td>9 Hari</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="fa fa-building-o"></i>
+                            </td>
+                            <td>Hotel Makkah</td>
+                            <td class="rating">
+                              Mariot/Setaraf
+                              <span>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="fa fa-building-o"></i>
+                            </td>
+                            <td>Hotel Madinah</td>
+                            <td class="rating">
+                              Ansar/Setaraf
+                              <span>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="fa fa-map-marker"></i>
+                            </td>
+                            <td>Bandara</td>
+                            <td>Soeakrno-Hatta</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="fa fa-plane"></i>
+                            </td>
+                            <td>Maskapai</td>
+                            <td>
+                              <img
+                                src="assets/img/logo-saudia.png"
+                                style="
+                                  display: inline;
+                                  width: 20px;
+                                  margin-right: 3px;
+                                "
+                              />Saudia
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <a
+                        href="https://wa.link/w8nmwv"
+                        class="btn_1 mt-2 btn-block font-weight-bold rounded"
+                        >Tanya Detail</a
+                      >
+                    </div>
+                    <!-- end package-info -->
+                  </div>
+                  <!-- end package-block -->
+                </div>
+                <!-- end item -->
+
+                <div class="item rounded">
+                  <div class="main-block package-block">
+                    <div class="main-img">
+                      <a href="#">
+                        <img
+                          src="assets/img/pkg-umroh-5.jpg"
+                          class="img-fluid"
+                          style="width: 360px; height: 240px"
+                          alt="package-img"
+                        />
+                      </a>
+                      <div class="main-mask">
+                        <ul class="list-unstyled list-inline offer-price-1">
+                          <li class="list-inline-item price">
+                            Rp30.900.000<span class="divider">|</span
+                            ><span class="pkg">QUAD</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- end main-mask -->
+                    </div>
+                    <!-- end offer-img -->
+
+                    <div class="main-info package-info">
+                      <!-- end arrow -->
+                      <table class="mt-1 mb-0 details table table-borderless">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <i class="fa fa-calendar"></i>
+                            </td>
+                            <td>Jadwal</td>
+                            <td>4, 20, Ags; 3 Sep 2025</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="fa fa-clock-o"></i>
+                            </td>
+                            <td>Durasi</td>
+                            <td>9 Hari</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="fa fa-building-o"></i>
+                            </td>
+                            <td>Hotel Makkah</td>
+                            <td class="rating">
+                              Zilal/Setaraf
+                              <span>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star lightgrey"></i>
+                                <i class="fa fa-star lightgrey"></i>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="fa fa-building-o"></i>
+                            </td>
+                            <td>Hotel Madinah</td>
+                            <td class="rating">
+                              Qasr/Setaraf
+                              <span>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star lightgrey"></i>
+                                <i class="fa fa-star lightgrey"></i>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="fa fa-map-marker"></i>
+                            </td>
+                            <td>Bandara</td>
+                            <td>Soeakrno-Hatta</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="fa fa-plane"></i>
+                            </td>
+                            <td>Maskapai</td>
+                            <td>
+                              <img
+                                src="assets/img/logo-oman.png"
+                                style="
+                                  display: inline;
+                                  width: 20px;
+                                  margin-right: 3px;
+                                "
+                              />Oman/Setaraf
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <a
+                        href="https://wa.link/w8nmwv"
+                        class="btn_1 mt-2 btn-block font-weight-bold rounded"
+                        >Tanya Detail</a
+                      >
+                    </div>
+                    <!-- end package-info -->
+                  </div>
+                  <!-- end package-block -->
+                </div>
+                <!-- end item -->
+              </div>
+              <!-- end owl-umroh-offers -->
             </div>
             <!-- end columns -->
           </div>
@@ -398,6 +590,791 @@
         </div>
         <!-- end container -->
       </section>
+      <!-- end package-offers -->
+
+      <!--=============== UMROH OFFERS ===============-->
+      <section
+        id="package-offers"
+        style="padding-top: 62px; padding-bottom: 62px"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="page-heading">
+                <h2>
+                  <span class="outer-title"
+                    ><img class="icon" src="./assets/img/icon.png" /><span
+                      class="inner-title"
+                    >
+                      <span class="text-title">PAKET UMROH</span></span
+                    ></span
+                  >
+                </h2>
+                <hr class="heading-line" />
+              </div>
+              <!-- end page-heading -->
+
+              <div
+                class="owl-carousel owl-theme owl-custom-arrow"
+                id="owl-umroh-offers"
+              >
+                <div class="item rounded">
+                  <div class="main-block package-block">
+                    <div class="main-img">
+                      <a href="#">
+                        <img
+                          src="assets/img/pkg-umroh-1.jpg"
+                          class="img-fluid"
+                          style="width: 360px; height: 240px"
+                          alt="package-img"
+                        />
+                      </a>
+                      <div class="main-mask">
+                        <ul class="list-unstyled list-inline offer-price-1">
+                          <li class="list-inline-item price">
+                            Rp36.900.000<span class="divider">|</span
+                            ><span class="pkg">QUAD</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- end main-mask -->
+                    </div>
+                    <!-- end offer-img -->
+
+                    <div class="main-info package-info">
+                      <!-- end arrow -->
+                      <table class="mt-1 mb-0 details table table-borderless">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <i class="fa fa-calendar"></i>
+                            </td>
+                            <td>Jadwal</td>
+                            <td>April 2025</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="fa fa-clock-o"></i>
+                            </td>
+                            <td>Durasi</td>
+                            <td>9 Hari</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="fa fa-building-o"></i>
+                            </td>
+                            <td>Hotel Makkah</td>
+                            <td class="rating">
+                              Mariot/Setaraf
+                              <span>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="fa fa-building-o"></i>
+                            </td>
+                            <td>Hotel Madinah</td>
+                            <td class="rating">
+                              Ansar/Setaraf
+                              <span>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="fa fa-map-marker"></i>
+                            </td>
+                            <td>Bandara</td>
+                            <td>JAKARTA</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="fa fa-plane"></i>
+                            </td>
+                            <td>Maskapai</td>
+                            <td>
+                              <img
+                                src="assets/img/logo-saudia.png"
+                                style="
+                                  display: inline;
+                                  width: 20px;
+                                  margin-right: 3px;
+                                "
+                              />Saudia
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <a
+                        href="https://wa.link/w8nmwv"
+                        class="btn_1 mt-2 btn-block font-weight-bold rounded"
+                        >Tanya Detail</a
+                      >
+                    </div>
+                    <!-- end package-info -->
+                  </div>
+                  <!-- end package-block -->
+                </div>
+                <!-- end item -->
+
+                <div class="item rounded">
+                  <div class="main-block package-block">
+                    <div class="main-img">
+                      <a href="#">
+                        <img
+                          src="assets/img/pkg-umroh-2.jpg"
+                          class="img-fluid"
+                          style="width: 360px; height: 240px"
+                          alt="package-img"
+                        />
+                      </a>
+                      <div class="main-mask">
+                        <ul class="list-unstyled list-inline offer-price-1">
+                          <li class="list-inline-item price">
+                            Rp32.900.000<span class="divider">|</span
+                            ><span class="pkg">QUAD</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- end main-mask -->
+                    </div>
+                    <!-- end offer-img -->
+
+                    <div class="main-info package-info">
+                      <!-- end arrow -->
+                      <table class="mt-1 mb-0 details table table-borderless">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <i class="fa fa-calendar"></i>
+                            </td>
+                            <td>Jadwal</td>
+                            <td>2, 13, 23 Juli; 26 Ags; 2, 24 Sep 2025</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="fa fa-clock-o"></i>
+                            </td>
+                            <td>Durasi</td>
+                            <td>9 Hari</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="fa fa-building-o"></i>
+                            </td>
+                            <td>Hotel Makkah</td>
+                            <td class="rating">
+                              Mariot/Setaraf
+                              <span>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="fa fa-building-o"></i>
+                            </td>
+                            <td>Hotel Madinah</td>
+                            <td class="rating">
+                              Ansar/Setaraf
+                              <span>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="fa fa-map-marker"></i>
+                            </td>
+                            <td>Bandara</td>
+                            <td>JAKARTA</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="fa fa-plane"></i>
+                            </td>
+                            <td>Maskapai</td>
+                            <td>
+                              <img
+                                src="assets/img/logo-saudia.png"
+                                style="
+                                  display: inline;
+                                  width: 20px;
+                                  margin-right: 3px;
+                                "
+                              />Saudia
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <a
+                        href="https://wa.link/w8nmwv"
+                        class="btn_1 mt-2 btn-block font-weight-bold rounded"
+                        >Tanya Detail</a
+                      >
+                    </div>
+                    <!-- end package-info -->
+                  </div>
+                  <!-- end package-block -->
+                </div>
+                <!-- end item -->
+
+                <div class="item rounded">
+                  <div class="main-block package-block">
+                    <div class="main-img">
+                      <a href="#">
+                        <img
+                          src="assets/img/pkg-umroh-4.jpg"
+                          class="img-fluid"
+                          style="width: 360px; height: 240px"
+                          alt="package-img"
+                        />
+                      </a>
+                      <div class="main-mask">
+                        <ul class="list-unstyled list-inline offer-price-1">
+                          <li class="list-inline-item price">
+                            Rp27.500.000<span class="divider">|</span
+                            ><span class="pkg">QUAD</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- end main-mask -->
+                    </div>
+                    <!-- end offer-img -->
+
+                    <div class="main-info package-info">
+                      <!-- end arrow -->
+                      <table class="mt-1 mb-0 details table table-borderless">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <i class="fa fa-calendar"></i>
+                            </td>
+                            <td>Jadwal</td>
+                            <td>4, 20, Ags; 3 Sep 2025</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="fa fa-clock-o"></i>
+                            </td>
+                            <td>Durasi</td>
+                            <td>9 Hari</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="fa fa-building-o"></i>
+                            </td>
+                            <td>Hotel Makkah</td>
+                            <td class="rating">
+                              Zilal/Setaraf
+                              <span>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star lightgrey"></i>
+                                <i class="fa fa-star lightgrey"></i>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="fa fa-building-o"></i>
+                            </td>
+                            <td>Hotel Madinah</td>
+                            <td class="rating">
+                              Qasr/Setaraf
+                              <span>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star lightgrey"></i>
+                                <i class="fa fa-star lightgrey"></i>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="fa fa-map-marker"></i>
+                            </td>
+                            <td>Bandara</td>
+                            <td>Soeakrno-Hatta</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="fa fa-plane"></i>
+                            </td>
+                            <td>Maskapai</td>
+                            <td>
+                              <img
+                                src="assets/img/logo-oman.png"
+                                style="
+                                  display: inline;
+                                  width: 20px;
+                                  margin-right: 3px;
+                                "
+                              />Oman/Setaraf
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <a
+                        href="https://wa.link/w8nmwv"
+                        class="btn_1 mt-2 btn-block font-weight-bold rounded"
+                        >Tanya Detail</a
+                      >
+                    </div>
+                    <!-- end package-info -->
+                  </div>
+                  <!-- end package-block -->
+                </div>
+                <!-- end item -->
+              </div>
+              <!-- end owl-umroh-offers -->
+            </div>
+            <!-- end columns -->
+          </div>
+          <!-- end row -->
+        </div>
+        <!-- end container -->
+      </section>
+      <!-- end package-offers -->
+
+      <!--=============== HAJI OFFERS ===============-->
+      <section
+        id="package-offers"
+        style="padding-top: 62px; padding-bottom: 124px"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="page-heading">
+                <h2>
+                  <span class="outer-title"
+                    ><img class="icon" src="./assets/img/icon.png" /><span
+                      class="inner-title"
+                    >
+                      <span class="text-title">PAKET HAJI</span></span
+                    ></span
+                  >
+                </h2>
+                <hr class="heading-line" />
+                <hr class="heading-line" />
+              </div>
+              <!-- end page-heading -->
+
+              <div
+                class="owl-carousel owl-theme owl-custom-arrow"
+                id="owl-haji-offers"
+              >
+                <div class="item rounded">
+                  <div class="main-block package-block">
+                    <div class="main-img">
+                      <a href="#">
+                        <img
+                          src="assets/img/pkg-haji-1.jpg"
+                          class="img-fluid"
+                          style="width: 360px; height: 240px"
+                          alt="package-img"
+                        />
+                      </a>
+                      <div class="main-mask">
+                        <ul class="list-unstyled list-inline offer-price-1">
+                          <li class="list-inline-item price">
+                            $15.500 USD<span class="divider">|</span
+                            ><span class="pkg">QUAD</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- end main-mask -->
+                    </div>
+                    <!-- end offer-img -->
+
+                    <div class="main-info package-info">
+                      <!-- end arrow -->
+                      <table class="mt-1 mb-0 details table table-borderless">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <i class="fa fa-clock-o"></i>
+                            </td>
+                            <td>Durasi</td>
+                            <td>27 Hari</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="fa fa-building-o"></i>
+                            </td>
+                            <td>Hotel Transit</td>
+                            <td class="rating">
+                              Aziziyah - Zona D
+                              <span>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="fa fa-building-o"></i>
+                            </td>
+                            <td>Hotel Makkah</td>
+                            <td class="rating">
+                              Sawaed/Setaraf
+                              <span>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="fa fa-building-o"></i>
+                            </td>
+                            <td>Hotel Madinah</td>
+                            <td class="rating">
+                              Durat/Setaraf
+                              <span>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="fa fa-map-marker"></i>
+                            </td>
+                            <td>Bandara</td>
+                            <td>Soeakrno-Hatta</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="fa fa-plane"></i>
+                            </td>
+                            <td>Maskapai</td>
+                            <td>
+                              <img
+                                src="assets/img/logo-saudia.png"
+                                style="
+                                  display: inline;
+                                  width: 20px;
+                                  margin-right: 3px;
+                                "
+                              />Saudia/
+                              <img
+                                src="assets/img/logo-qatar.png"
+                                style="
+                                  display: inline;
+                                  width: 20px;
+                                  margin-right: 3px;
+                                "
+                              />Qatar
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <a
+                        href="https://wa.link/w8nmwv"
+                        class="btn_1 mt-2 btn-block font-weight-bold rounded"
+                        >Tanya Detail</a
+                      >
+                    </div>
+                    <!-- end package-info -->
+                  </div>
+                  <!-- end package-block -->
+                </div>
+                <!-- end item -->
+
+                <div class="item rounded">
+                  <div class="main-block package-block">
+                    <div class="main-img">
+                      <a href="#">
+                        <img
+                          src="assets/img/pkg-haji-2.jpg"
+                          class="img-fluid"
+                          style="width: 360px; height: 240px"
+                          alt="package-img"
+                        />
+                      </a>
+                      <div class="main-mask">
+                        <ul class="list-unstyled list-inline offer-price-1">
+                          <li class="list-inline-item price">
+                            $19.000 USD<span class="divider">|</span
+                            ><span class="pkg">QUAD</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- end main-mask -->
+                    </div>
+                    <!-- end offer-img -->
+
+                    <div class="main-info package-info">
+                      <!-- end arrow -->
+                      <table class="mt-1 mb-0 details table table-borderless">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <i class="fa fa-clock-o"></i>
+                            </td>
+                            <td>Durasi</td>
+                            <td>27 Hari</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="fa fa-building-o"></i>
+                            </td>
+                            <td>Hotel Transit</td>
+                            <td class="rating">
+                              Aziziyah - Zona D
+                              <span>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="fa fa-building-o"></i>
+                            </td>
+                            <td>Hotel Makkah</td>
+                            <td class="rating">
+                              Swiss/Setaraf
+                              <span>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="fa fa-building-o"></i>
+                            </td>
+                            <td>Hotel Madinah</td>
+                            <td class="rating">
+                              Aqeeq/Setaraf
+                              <span>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="fa fa-map-marker"></i>
+                            </td>
+                            <td>Bandara</td>
+                            <td>Soekarno-Hatta</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="fa fa-plane"></i>
+                            </td>
+                            <td>Maskapai</td>
+                            <td>
+                              <img
+                                src="assets/img/logo-saudia.png"
+                                style="
+                                  display: inline;
+                                  width: 20px;
+                                  margin-right: 3px;
+                                "
+                              />Saudia/
+                              <img
+                                src="assets/img/logo-qatar.png"
+                                style="
+                                  display: inline;
+                                  width: 20px;
+                                  margin-right: 3px;
+                                "
+                              />Qatar
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <a
+                        href="https://wa.link/w8nmwv"
+                        class="btn_1 mt-2 btn-block font-weight-bold rounded"
+                        >Tanya Detail</a
+                      >
+                    </div>
+                    <!-- end package-info -->
+                  </div>
+                  <!-- end package-block -->
+                </div>
+                <!-- end item -->
+
+                <div class="item rounded">
+                  <div class="main-block package-block">
+                    <div class="main-img">
+                      <a href="#">
+                        <img
+                          src="assets/img/pkg-haji-2.jpg"
+                          class="img-fluid"
+                          style="width: 360px; height: 240px"
+                          alt="package-img"
+                        />
+                      </a>
+                      <div class="main-mask">
+                        <ul class="list-unstyled list-inline offer-price-1">
+                          <li class="list-inline-item price">
+                            $33.500 USD<span class="divider">|</span
+                            ><span class="pkg">QUAD</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- end main-mask -->
+                    </div>
+                    <!-- end offer-img -->
+
+                    <div class="main-info package-info">
+                      <!-- end arrow -->
+                      <table class="mt-1 mb-0 details table table-borderless">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <i class="fa fa-clock-o"></i>
+                            </td>
+                            <td>Durasi</td>
+                            <td>15 Hari</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="fa fa-building-o"></i>
+                            </td>
+                            <td>Hotel Transit</td>
+                            <td class="rating">
+                              Swiss - VVIP Abraj
+                              <span>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="fa fa-building-o"></i>
+                            </td>
+                            <td>Hotel Makkah</td>
+                            <td class="rating">
+                              Swiss/Setaraf
+                              <span>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="fa fa-building-o"></i>
+                            </td>
+                            <td>Hotel Madinah</td>
+                            <td class="rating">
+                              Aqeeq/Setaraf
+                              <span>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                                <i class="fa fa-star orange"></i>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="fa fa-map-marker"></i>
+                            </td>
+                            <td>Bandara</td>
+                            <td>Soekarno-Hatta</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="fa fa-plane"></i>
+                            </td>
+                            <td>Maskapai</td>
+                            <td>
+                              <img
+                                src="assets/img/logo-saudia.png"
+                                style="
+                                  display: inline;
+                                  width: 20px;
+                                  margin-right: 3px;
+                                "
+                              />Saudia/
+                              <img
+                                src="assets/img/logo-qatar.png"
+                                style="
+                                  display: inline;
+                                  width: 20px;
+                                  margin-right: 3px;
+                                "
+                              />Qatar
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <a
+                        href="https://wa.link/w8nmwv"
+                        class="btn_1 mt-2 btn-block font-weight-bold rounded"
+                        >Tanya Detail</a
+                      >
+                    </div>
+                    <!-- end package-info -->
+                  </div>
+                  <!-- end package-block -->
+                </div>
+                <!-- end item -->
+              </div>
+              <!-- end owl-umroh-offers -->
+            </div>
+            <!-- end columns -->
+          </div>
+          <!-- end row -->
+        </div>
+        <!-- end container -->
+      </section>
+      <!-- end package-offers -->
 
       <!--======================= BEST FEATURES =====================-->
       <section id="best-features" class="banner-padding black-features">
@@ -462,1459 +1439,8 @@
       </section>
       <!-- end best-features -->
 
-      <!--=============== PACKAGE OFFERS ===============-->
-      <section id="package-offers" class="section-padding">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="page-heading">
-                <h2>Paket Perjalanan</h2>
-                <hr class="heading-line" />
-              </div>
-              <!-- end page-heading -->
-
-              <div
-                class="owl-carousel owl-theme owl-custom-arrow"
-                id="owl-package-offers"
-              >
-                <div class="item rounded">
-                  <div class="main-block package-block">
-                    <div class="main-img">
-                      <a href="#">
-                        <img
-                          src="assets/img/package-7.png"
-                          class="img-fluid"
-                          style="width: 360px; height: 240px"
-                          alt="package-img"
-                        />
-                      </a>
-                      <div class="main-mask">
-                        <ul class="list-unstyled list-inline offer-price-1">
-                          <li class="list-inline-item price">
-                            Rp29.900.000<span class="divider">|</span
-                            ><span class="pkg">QUAD</span>
-                          </li>
-                        </ul>
-                      </div>
-                      <!-- end main-mask -->
-                    </div>
-                    <!-- end offer-img -->
-
-                    <div class="main-info package-info">
-                      <!-- end arrow -->
-                      <table class="mt-1 mb-0 details table table-borderless">
-                        <tbody>
-                          <tr>
-                            <td>
-                              <i class="fa fa-calendar"></i>
-                            </td>
-                            <td>Jadwal</td>
-                            <td>Oktober 2024</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-clock-o"></i>
-                            </td>
-                            <td>Durasi</td>
-                            <td>9 Hari</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-building-o"></i>
-                            </td>
-                            <td>Hotel Makkah</td>
-                            <td class="rating">
-                              Meredien
-                              <span>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                              </span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-building-o"></i>
-                            </td>
-                            <td>Hotel Madinah</td>
-                            <td class="rating">
-                              Hayah
-                              <span>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star lightgrey"></i>
-                                <i class="fa fa-star lightgrey"></i>
-                              </span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-map-marker"></i>
-                            </td>
-                            <td>Bandara</td>
-                            <td>JAKARTA</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-plane"></i>
-                            </td>
-                            <td>Maskapai</td>
-                            <td>
-                              <img
-                                src="assets/img/logo-garuda.png"
-                                style="
-                                  display: inline;
-                                  width: 20px;
-                                  margin-right: 3px;
-                                "
-                              />Garuda /
-                              <img
-                                src="assets/img/logo-saudia.png"
-                                style="
-                                  display: inline;
-                                  width: 20px;
-                                  margin-right: 3px;
-                                "
-                              />Saudia
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <a
-                        href="https://wa.link/w8nmwv"
-                        class="btn_1 mt-2 btn-block font-weight-bold rounded"
-                        >Tanya Detail</a
-                      >
-                    </div>
-                    <!-- end package-info -->
-                  </div>
-                  <!-- end package-block -->
-                </div>
-                <!-- end item -->
-
-                <div class="item rounded">
-                  <div class="main-block package-block">
-                    <div class="main-img">
-                      <a href="#">
-                        <img
-                          src="assets/img/package-8.png"
-                          class="img-fluid"
-                          style="width: 360px; height: 240px"
-                          alt="package-img"
-                        />
-                      </a>
-                      <div class="main-mask">
-                        <ul class="list-unstyled list-inline offer-price-1">
-                          <li class="list-inline-item price">
-                            Rp31.950.000<span class="divider">|</span
-                            ><span class="pkg">QUAD</span>
-                          </li>
-                        </ul>
-                      </div>
-                      <!-- end main-mask -->
-                    </div>
-                    <!-- end offer-img -->
-
-                    <div class="main-info package-info">
-                      <!-- end arrow -->
-                      <table class="mt-1 mb-0 details table table-borderless">
-                        <tbody>
-                          <tr>
-                            <td>
-                              <i class="fa fa-calendar"></i>
-                            </td>
-                            <td>Jadwal</td>
-                            <td>Januari 2025</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-clock-o"></i>
-                            </td>
-                            <td>Durasi</td>
-                            <td>9 Hari</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-building-o"></i>
-                            </td>
-                            <td>Hotel Makkah</td>
-                            <td class="rating">
-                              Anjum
-                              <span>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                              </span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-building-o"></i>
-                            </td>
-                            <td>Hotel Madinah</td>
-                            <td class="rating">
-                              Al-Naem
-                              <span>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star lightgrey"></i>
-                              </span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-map-marker"></i>
-                            </td>
-                            <td>Bandara</td>
-                            <td>JAKARTA</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-plane"></i>
-                            </td>
-                            <td>Maskapai</td>
-                            <td>
-                              <img
-                                src="assets/img/logo-garuda.png"
-                                style="
-                                  display: inline;
-                                  width: 20px;
-                                  margin-right: 3px;
-                                "
-                              />Garuda /
-                              <img
-                                src="assets/img/logo-saudia.png"
-                                style="
-                                  display: inline;
-                                  width: 20px;
-                                  margin-right: 3px;
-                                "
-                              />Saudia
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <a
-                        href="https://wa.link/v28qmi"
-                        class="btn_1 mt-2 btn-block font-weight-bold rounded"
-                        >Tanya Detail</a
-                      >
-                    </div>
-                    <!-- end package-info -->
-                  </div>
-                  <!-- end package-block -->
-                </div>
-                <!-- end item -->
-
-                <div class="item rounded">
-                  <div class="main-block package-block">
-                    <div class="main-img">
-                      <a href="#">
-                        <img
-                          src="assets/img/package-9.png"
-                          class="img-fluid"
-                          style="width: 360px; height: 240px"
-                          alt="package-img"
-                        />
-                      </a>
-                      <div class="main-mask">
-                        <ul class="list-unstyled list-inline offer-price-1">
-                          <li class="list-inline-item price">
-                            Rp31.380.000<span class="divider">|</span
-                            ><span class="pkg">QUAD</span>
-                          </li>
-                        </ul>
-                      </div>
-                      <!-- end main-mask -->
-                    </div>
-                    <!-- end offer-img -->
-
-                    <div class="main-info package-info">
-                      <!-- end arrow -->
-                      <table class="mt-1 mb-0 details table table-borderless">
-                        <tbody>
-                          <tr>
-                            <td>
-                              <i class="fa fa-calendar"></i>
-                            </td>
-                            <td>Jadwal</td>
-                            <td>12 November 2024</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-clock-o"></i>
-                            </td>
-                            <td>Durasi</td>
-                            <td>9 Hari</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-building-o"></i>
-                            </td>
-                            <td>Hotel Makkah</td>
-                            <td class="rating">
-                              Anjum
-                              <span>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                              </span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-building-o"></i>
-                            </td>
-                            <td>Hotel Madinah</td>
-                            <td class="rating">
-                              Nozol
-                              <span>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star lightgrey"></i>
-                              </span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-map-marker"></i>
-                            </td>
-                            <td>Bandara</td>
-                            <td>JAKARTA</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-plane"></i>
-                            </td>
-                            <td>Maskapai</td>
-                            <td>
-                              <img
-                                src="assets/img/logo-garuda.png"
-                                style="
-                                  display: inline;
-                                  width: 20px;
-                                  margin-right: 3px;
-                                "
-                              />Garuda /
-                              <img
-                                src="assets/img/logo-saudia.png"
-                                style="
-                                  display: inline;
-                                  width: 20px;
-                                  margin-right: 3px;
-                                "
-                              />Saudia
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <a
-                        href="https://wa.link/0tcv8u"
-                        class="btn_1 mt-2 btn-block font-weight-bold rounded"
-                        >Tanya Detail</a
-                      >
-                    </div>
-                    <!-- end package-info -->
-                  </div>
-                  <!-- end package-block -->
-                </div>
-                <!-- end item -->
-
-                <div class="item rounded">
-                  <div class="main-block package-block">
-                    <div class="main-img">
-                      <a href="#">
-                        <img
-                          src="assets/img/package-9.png"
-                          class="img-fluid"
-                          style="width: 360px; height: 240px"
-                          alt="package-img"
-                        />
-                      </a>
-                      <div class="main-mask">
-                        <ul class="list-unstyled list-inline offer-price-1">
-                          <li class="list-inline-item price">
-                            Rp33.380.000<span class="divider">|</span
-                            ><span class="pkg">QUAD</span>
-                          </li>
-                        </ul>
-                      </div>
-                      <!-- end main-mask -->
-                    </div>
-                    <!-- end offer-img -->
-
-                    <div class="main-info package-info">
-                      <!-- end arrow -->
-                      <table class="mt-1 mb-0 details table table-borderless">
-                        <tbody>
-                          <tr>
-                            <td>
-                              <i class="fa fa-calendar"></i>
-                            </td>
-                            <td>Jadwal</td>
-                            <td>12 November 2024</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-clock-o"></i>
-                            </td>
-                            <td>Durasi</td>
-                            <td>12 Hari</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-building-o"></i>
-                            </td>
-                            <td>Hotel Makkah</td>
-                            <td class="rating">
-                              Anjum
-                              <span>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                              </span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-building-o"></i>
-                            </td>
-                            <td>Hotel Madinah</td>
-                            <td class="rating">
-                              Nozol
-                              <span>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star lightgrey"></i>
-                              </span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-map-marker"></i>
-                            </td>
-                            <td>Bandara</td>
-                            <td>JAKARTA</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-plane"></i>
-                            </td>
-                            <td>Maskapai</td>
-                            <td>
-                              <img
-                                src="assets/img/logo-garuda.png"
-                                style="
-                                  display: inline;
-                                  width: 20px;
-                                  margin-right: 3px;
-                                "
-                              />Garuda /
-                              <img
-                                src="assets/img/logo-saudia.png"
-                                style="
-                                  display: inline;
-                                  width: 20px;
-                                  margin-right: 3px;
-                                "
-                              />Saudia
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <a
-                        href="https://wa.link/b9rk24"
-                        class="btn_1 mt-2 btn-block font-weight-bold rounded"
-                        >Tanya Detail</a
-                      >
-                    </div>
-                    <!-- end package-info -->
-                  </div>
-                  <!-- end package-block -->
-                </div>
-                <!-- end item -->
-
-                <div class="item rounded">
-                  <div class="main-block package-block">
-                    <div class="main-img">
-                      <a href="#">
-                        <img
-                          src="assets/img/package-10.png"
-                          class="img-fluid"
-                          style="width: 360px; height: 240px"
-                          alt="package-img"
-                        />
-                      </a>
-                      <div class="main-mask">
-                        <ul class="list-unstyled list-inline offer-price-1">
-                          <li class="list-inline-item price">
-                            Rp35.950.000<span class="divider">|</span
-                            ><span class="pkg">QUAD</span>
-                          </li>
-                        </ul>
-                      </div>
-                      <!-- end main-mask -->
-                    </div>
-                    <!-- end offer-img -->
-
-                    <div class="main-info package-info">
-                      <!-- end arrow -->
-                      <table class="mt-1 mb-0 details table table-borderless">
-                        <tbody>
-                          <tr>
-                            <td>
-                              <i class="fa fa-calendar"></i>
-                            </td>
-                            <td>Jadwal</td>
-                            <td>Desember 2024-2025</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-clock-o"></i>
-                            </td>
-                            <td>Durasi</td>
-                            <td>9 Hari</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-building-o"></i>
-                            </td>
-                            <td>Hotel Makkah</td>
-                            <td class="rating">
-                              Almassa
-                              <span>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star lightgrey"></i>
-                              </span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-building-o"></i>
-                            </td>
-                            <td>Hotel Madinah</td>
-                            <td class="rating">
-                              Emaar
-                              <span>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star lightgrey"></i>
-                              </span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-map-marker"></i>
-                            </td>
-                            <td>Bandara</td>
-                            <td>JAKARTA</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-plane"></i>
-                            </td>
-                            <td>Maskapai</td>
-                            <td>
-                              <img
-                                src="assets/img/logo-garuda.png"
-                                style="
-                                  display: inline;
-                                  width: 20px;
-                                  margin-right: 3px;
-                                "
-                              />Garuda /
-                              <img
-                                src="assets/img/logo-saudia.png"
-                                style="
-                                  display: inline;
-                                  width: 20px;
-                                  margin-right: 3px;
-                                "
-                              />Saudia
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <a
-                        href="https://wa.link/yfb9ak"
-                        class="btn_1 mt-2 btn-block font-weight-bold rounded"
-                        >Tanya Detail</a
-                      >
-                    </div>
-                    <!-- end package-info -->
-                  </div>
-                  <!-- end package-block -->
-                </div>
-                <!-- end item -->
-
-                <div class="item rounded">
-                  <div class="main-block package-block">
-                    <div class="main-img">
-                      <a href="#">
-                        <img
-                          src="assets/img/package-11.png"
-                          class="img-fluid"
-                          style="width: 360px; height: 240px"
-                          alt="package-img"
-                        />
-                      </a>
-                      <div class="main-mask">
-                        <ul class="list-unstyled list-inline offer-price-1">
-                          <li class="list-inline-item price">
-                            Rp45.800.000<span class="divider">|</span
-                            ><span class="pkg">QUAD</span>
-                          </li>
-                        </ul>
-                      </div>
-                      <!-- end main-mask -->
-                    </div>
-                    <!-- end offer-img -->
-
-                    <div class="main-info package-info">
-                      <!-- end arrow -->
-                      <table class="mt-1 mb-0 details table table-borderless">
-                        <tbody>
-                          <tr>
-                            <td>
-                              <i class="fa fa-calendar"></i>
-                            </td>
-                            <td>Jadwal</td>
-                            <td>Desember 2024</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-clock-o"></i>
-                            </td>
-                            <td>Durasi</td>
-                            <td>12 Hari</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-building-o"></i>
-                            </td>
-                            <td>Hotel Makkah</td>
-                            <td class="rating">
-                              Majestic
-                              <span>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star lightgrey"></i>
-                                <i class="fa fa-star lightgrey"></i>
-                              </span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-building-o"></i>
-                            </td>
-                            <td>Hotel Madinah</td>
-                            <td class="rating">
-                              Al-Anshar
-                              <span>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star lightgrey"></i>
-                              </span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-building-o"></i>
-                            </td>
-                            <td>Hotel Turki</td>
-                            <td class="rating">
-                              Centro
-                              <span>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star lightgrey"></i>
-                              </span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-map-marker"></i>
-                            </td>
-                            <td>Bandara</td>
-                            <td>JAKARTA</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-plane"></i>
-                            </td>
-                            <td>Maskapai</td>
-                            <td>
-                              <img
-                                src="assets/img/logo-garuda.png"
-                                style="
-                                  display: inline;
-                                  width: 20px;
-                                  margin-right: 3px;
-                                "
-                              />Garuda /
-                              <img
-                                src="assets/img/logo-saudia.png"
-                                style="
-                                  display: inline;
-                                  width: 20px;
-                                  margin-right: 3px;
-                                "
-                              />Saudia
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <a
-                        href="https://wa.link/g1lomr"
-                        class="btn_1 mt-2 btn-block font-weight-bold rounded"
-                        >Tanya Detail</a
-                      >
-                    </div>
-                    <!-- end package-info -->
-                  </div>
-                  <!-- end package-block -->
-                </div>
-                <!-- end item -->
-
-                <div class="item rounded">
-                  <div class="main-block package-block">
-                    <div class="main-img">
-                      <a href="#">
-                        <img
-                          src="assets/img/package-4.png"
-                          class="img-fluid"
-                          style="width: 360px; height: 240px"
-                          alt="package-img"
-                        />
-                      </a>
-                      <div class="main-mask">
-                        <ul class="list-unstyled list-inline offer-price-1">
-                          <li class="list-inline-item price">
-                            Rp30.100.000<span class="divider">|</span
-                            ><span class="pkg">QUAD</span>
-                          </li>
-                        </ul>
-                      </div>
-                      <!-- end main-mask -->
-                    </div>
-                    <!-- end offer-img -->
-
-                    <div class="main-info package-info">
-                      <!-- end arrow -->
-                      <table class="mt-1 mb-0 details table table-borderless">
-                        <tbody>
-                          <tr>
-                            <td>
-                              <i class="fa fa-calendar"></i>
-                            </td>
-                            <td>Jadwal</td>
-                            <td>12 Okt/Des, 20 Okt 2024</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-clock-o"></i>
-                            </td>
-                            <td>Durasi</td>
-                            <td>9 Hari</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-building-o"></i>
-                            </td>
-                            <td>Hotel Makkah</td>
-                            <td class="rating">
-                              Anjum
-                              <span>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                              </span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-building-o"></i>
-                            </td>
-                            <td>Hotel Madinah</td>
-                            <td class="rating">
-                              Odst
-                              <span>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star lightgrey"></i>
-                              </span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-map-marker"></i>
-                            </td>
-                            <td>Bandara</td>
-                            <td>JAKARTA</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-plane"></i>
-                            </td>
-                            <td>Maskapai</td>
-                            <td>
-                              <img
-                                src="assets/img/logo-garuda.png"
-                                style="
-                                  display: inline;
-                                  width: 20px;
-                                  margin-right: 3px;
-                                "
-                              />Garuda /
-                              <img
-                                src="assets/img/logo-saudia.png"
-                                style="
-                                  display: inline;
-                                  width: 20px;
-                                  margin-right: 3px;
-                                "
-                              />Saudia
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <a
-                        href="https://wa.link/7ijsm7"
-                        class="btn_1 mt-2 btn-block font-weight-bold rounded"
-                        >Tanya Detail</a
-                      >
-                    </div>
-                    <!-- end package-info -->
-                  </div>
-                  <!-- end package-block -->
-                </div>
-                <!-- end item -->
-
-                <div class="item rounded">
-                  <div class="main-block package-block">
-                    <div class="main-img">
-                      <a href="#">
-                        <img
-                          src="assets/img/package-5.png"
-                          class="img-fluid"
-                          style="width: 360px; height: 240px"
-                          alt="package-img"
-                        />
-                      </a>
-                      <div class="main-mask">
-                        <ul class="list-unstyled list-inline offer-price-1">
-                          <li class="list-inline-item price">
-                            Rp32.300.000<span class="divider">|</span
-                            ><span class="pkg">QUAD</span>
-                          </li>
-                        </ul>
-                      </div>
-                      <!-- end main-mask -->
-                    </div>
-                    <!-- end offer-img -->
-
-                    <div class="main-info package-info">
-                      <!-- end arrow -->
-                      <table class="mt-1 mb-0 details table table-borderless">
-                        <tbody>
-                          <tr>
-                            <td>
-                              <i class="fa fa-calendar"></i>
-                            </td>
-                            <td>Jadwal</td>
-                            <td>12 Okt/Des, 20 Okt 2024</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-clock-o"></i>
-                            </td>
-                            <td>Durasi</td>
-                            <td>9 Hari</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-building-o"></i>
-                            </td>
-                            <td>Hotel Makkah</td>
-                            <td class="rating">
-                              Anjum
-                              <span>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                              </span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-building-o"></i>
-                            </td>
-                            <td>Hotel Madinah</td>
-                            <td class="rating">
-                              Nozol
-                              <span>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star lightgrey"></i>
-                              </span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-map-marker"></i>
-                            </td>
-                            <td>Bandara</td>
-                            <td>JAKARTA</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-plane"></i>
-                            </td>
-                            <td>Maskapai</td>
-                            <td>
-                              <img
-                                src="assets/img/logo-garuda.png"
-                                style="
-                                  display: inline;
-                                  width: 20px;
-                                  margin-right: 3px;
-                                "
-                              />Garuda /
-                              <img
-                                src="assets/img/logo-saudia.png"
-                                style="
-                                  display: inline;
-                                  width: 20px;
-                                  margin-right: 3px;
-                                "
-                              />Saudia
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <a
-                        href="https://wa.link/j51znx"
-                        class="btn_1 mt-2 btn-block font-weight-bold rounded"
-                        >Tanya Detail</a
-                      >
-                    </div>
-                    <!-- end package-info -->
-                  </div>
-                  <!-- end package-block -->
-                </div>
-                <!-- end item -->
-
-                <div class="item rounded">
-                  <div class="main-block package-block">
-                    <div class="main-img">
-                      <a href="#">
-                        <img
-                          src="assets/img/package-6.png"
-                          class="img-fluid"
-                          style="width: 360px; height: 240px"
-                          alt="package-img"
-                        />
-                      </a>
-                      <div class="main-mask">
-                        <ul class="list-unstyled list-inline offer-price-1">
-                          <li class="list-inline-item price">
-                            Rp36.900.000<span class="divider">|</span
-                            ><span class="pkg">QUAD</span>
-                          </li>
-                        </ul>
-                      </div>
-                      <!-- end main-mask -->
-                    </div>
-                    <!-- end offer-img -->
-
-                    <div class="main-info package-info">
-                      <!-- end arrow -->
-                      <table class="mt-1 mb-0 details table table-borderless">
-                        <tbody>
-                          <tr>
-                            <td>
-                              <i class="fa fa-calendar"></i>
-                            </td>
-                            <td>Jadwal</td>
-                            <td>12 Okt/Des, 20 Okt 2024</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-clock-o"></i>
-                            </td>
-                            <td>Durasi</td>
-                            <td>9 Hari</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-building-o"></i>
-                            </td>
-                            <td>Hotel Makkah</td>
-                            <td class="rating">
-                              Pullman
-                              <span>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                              </span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-building-o"></i>
-                            </td>
-                            <td>Hotel Madinah</td>
-                            <td class="rating">
-                              Nozol
-                              <span>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star lightgrey"></i>
-                              </span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-map-marker"></i>
-                            </td>
-                            <td>Bandara</td>
-                            <td>JAKARTA</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-plane"></i>
-                            </td>
-                            <td>Maskapai</td>
-                            <td>
-                              <img
-                                src="assets/img/logo-garuda.png"
-                                style="
-                                  display: inline;
-                                  width: 20px;
-                                  margin-right: 3px;
-                                "
-                              />Garuda /
-                              <img
-                                src="assets/img/logo-saudia.png"
-                                style="
-                                  display: inline;
-                                  width: 20px;
-                                  margin-right: 3px;
-                                "
-                              />Saudia
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <a
-                        href="https://wa.link/hkahel"
-                        class="btn_1 mt-2 btn-block font-weight-bold rounded"
-                        >Tanya Detail</a
-                      >
-                    </div>
-                    <!-- end package-info -->
-                  </div>
-                  <!-- end package-block -->
-                </div>
-                <!-- end item -->
-
-                <div class="item rounded">
-                  <div class="main-block package-block">
-                    <div class="main-img sold-out">
-                      <a href="#">
-                        <img
-                          src="assets/img/package-1.png"
-                          class="img-fluid"
-                          style="width: 360px; height: 240px"
-                          alt="package-img"
-                        />
-                      </a>
-                      <div class="main-mask">
-                        <ul class="list-unstyled list-inline offer-price-1">
-                          <li class="list-inline-item price">
-                            Rp29.950.000<span class="divider">|</span
-                            ><span class="pkg">QUAD</span>
-                          </li>
-                        </ul>
-                      </div>
-                      <!-- end main-mask -->
-                    </div>
-                    <!-- end offer-img -->
-
-                    <div class="main-info package-info">
-                      <!-- end arrow -->
-                      <table class="mt-1 mb-0 details table table-borderless">
-                        <tbody>
-                          <tr>
-                            <td>
-                              <i class="fa fa-calendar"></i>
-                            </td>
-                            <td>Jadwal</td>
-                            <td>16 & 20 Agu 2024</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-clock-o"></i>
-                            </td>
-                            <td>Durasi</td>
-                            <td>9 Hari</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-building-o"></i>
-                            </td>
-                            <td>Hotel Makkah</td>
-                            <td class="rating">
-                              <span>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star lightgrey"></i>
-                                <i class="fa fa-star lightgrey"></i>
-                              </span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-building-o"></i>
-                            </td>
-                            <td>Hotel Madinah</td>
-                            <td class="rating">
-                              <span>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star lightgrey"></i>
-                                <i class="fa fa-star lightgrey"></i>
-                              </span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-map-marker"></i>
-                            </td>
-                            <td>Bandara</td>
-                            <td>JAKARTA</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-plane"></i>
-                            </td>
-                            <td>Maskapai</td>
-                            <td>
-                              <img
-                                src="assets/img/logo-garuda.png"
-                                style="
-                                  display: inline;
-                                  width: 20px;
-                                  margin-right: 3px;
-                                "
-                              />Garuda /
-                              <img
-                                src="assets/img/logo-saudia.png"
-                                style="
-                                  display: inline;
-                                  width: 20px;
-                                  margin-right: 3px;
-                                "
-                              />Saudia
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <a
-                        href="paket-clasic.html"
-                        class="btn_1 mt-2 btn-block font-weight-bold rounded sold-out"
-                        >Terjual Habis</a
-                      >
-                    </div>
-                    <!-- end package-info -->
-                  </div>
-                  <!-- end package-block -->
-                </div>
-                <!-- end item -->
-
-                <div class="item rounded">
-                  <div class="main-block package-block">
-                    <div class="main-img sold-out">
-                      <a href="#">
-                        <img
-                          src="assets/img/package-2.png"
-                          class="img-fluid"
-                          style="width: 360px; height: 240px"
-                          alt="package-img"
-                        />
-                      </a>
-                      <div class="main-mask">
-                        <ul class="list-unstyled list-inline offer-price-1">
-                          <li class="list-inline-item price">
-                            Rp33.750.000<span class="divider">|</span
-                            ><span class="pkg">QUAD</span>
-                          </li>
-                        </ul>
-                      </div>
-                      <!-- end main-mask -->
-                    </div>
-                    <!-- end offer-img -->
-
-                    <div class="main-info package-info">
-                      <!-- end arrow -->
-                      <table class="mt-1 mb-0 details table table-borderless">
-                        <tbody>
-                          <tr>
-                            <td>
-                              <i class="fa fa-calendar"></i>
-                            </td>
-                            <td>Jadwal</td>
-                            <td>16 & 20 Agu 2024</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-clock-o"></i>
-                            </td>
-                            <td>Durasi</td>
-                            <td>9 Hari</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-building-o"></i>
-                            </td>
-                            <td>Hotel Makkah</td>
-                            <td class="rating">
-                              <span>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                              </span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-building-o"></i>
-                            </td>
-                            <td>Hotel Madinah</td>
-                            <td class="rating">
-                              <span>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star lightgrey"></i>
-                                <i class="fa fa-star lightgrey"></i>
-                              </span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-map-marker"></i>
-                            </td>
-                            <td>Bandara</td>
-                            <td>JAKARTA</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-plane"></i>
-                            </td>
-                            <td>Maskapai</td>
-                            <td>
-                              <img
-                                src="assets/img/logo-garuda.png"
-                                style="
-                                  display: inline;
-                                  width: 20px;
-                                  margin-right: 3px;
-                                "
-                              />Garuda /
-                              <img
-                                src="assets/img/logo-saudia.png"
-                                style="
-                                  display: inline;
-                                  width: 20px;
-                                  margin-right: 3px;
-                                "
-                              />Saudia
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <a
-                        href="paket-signature.html"
-                        class="btn_1 mt-2 btn-block font-weight-bold rounded sold-out"
-                        >Terjual Habis</a
-                      >
-                    </div>
-                    <!-- end package-info -->
-                  </div>
-                  <!-- end package-block -->
-                </div>
-                <!-- end item -->
-
-                <div class="item rounded">
-                  <div class="main-block package-block">
-                    <div class="main-img sold-out">
-                      <a href="#">
-                        <img
-                          src="assets/img/package-3.png"
-                          class="img-fluid"
-                          style="width: 360px; height: 240px"
-                          alt="package-img"
-                        />
-                      </a>
-                      <div class="main-mask">
-                        <ul class="list-unstyled list-inline offer-price-1">
-                          <li class="list-inline-item price">
-                            Rp32.350.000<span class="divider">|</span
-                            ><span class="pkg">QUAD</span>
-                          </li>
-                        </ul>
-                      </div>
-                      <!-- end main-mask -->
-                    </div>
-                    <!-- end offer-img -->
-
-                    <div class="main-info package-info">
-                      <!-- end arrow -->
-                      <table class="mt-1 mb-0 details table table-borderless">
-                        <tbody>
-                          <tr>
-                            <td>
-                              <i class="fa fa-calendar"></i>
-                            </td>
-                            <td>Jadwal</td>
-                            <td>12 & 20 Sep 2024</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-clock-o"></i>
-                            </td>
-                            <td>Durasi</td>
-                            <td>9 Hari</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-building-o"></i>
-                            </td>
-                            <td>Hotel Makkah</td>
-                            <td class="rating">
-                              <span>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                              </span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-building-o"></i>
-                            </td>
-                            <td>Hotel Madinah</td>
-                            <td class="rating">
-                              <span>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star orange"></i>
-                                <i class="fa fa-star lightgrey"></i>
-                              </span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-map-marker"></i>
-                            </td>
-                            <td>Bandara</td>
-                            <td>JAKARTA</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <i class="fa fa-plane"></i>
-                            </td>
-                            <td>Maskapai</td>
-                            <td>
-                              <img
-                                src="assets/img/logo-garuda.png"
-                                style="
-                                  display: inline;
-                                  width: 20px;
-                                  margin-right: 3px;
-                                "
-                              />Garuda /
-                              <img
-                                src="assets/img/logo-saudia.png"
-                                style="
-                                  display: inline;
-                                  width: 20px;
-                                  margin-right: 3px;
-                                "
-                              />Saudia
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <a
-                        href="paket-umroh-maulid.html"
-                        class="btn_1 mt-2 btn-block font-weight-bold rounded sold-out"
-                        >Terjual Habis</a
-                      >
-                    </div>
-                    <!-- end package-info -->
-                  </div>
-                  <!-- end package-block -->
-                </div>
-                <!-- end item -->
-              </div>
-              <!-- end owl-package-offers -->
-            </div>
-            <!-- end columns -->
-          </div>
-          <!-- end row -->
-        </div>
-        <!-- end container -->
-      </section>
-      <!-- end package-offers -->
-
       <!--======= BEST OFFER BANNER ======-->
-      <section id="best-offer-banner">
+      <section id="best-offer-banner" style="padding-top: 103px">
         <div class="container">
           <div class="col-md-12">
             <div class="row">
