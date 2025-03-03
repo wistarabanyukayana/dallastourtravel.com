@@ -5,10 +5,10 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp build",
     "dev": "gulp dev",
-    "clean": "gulp clean"
+    "clean": "gulp clean",
+    "serve": "serve dist"
   },
   "repository": {
     "type": "git",
@@ -28,7 +28,9 @@
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^8.0.0",
     "gulp-rev": "^11.0.0",
+    "gulp-rev-delete-original": "^0.2.3",
     "gulp-rev-rewrite": "^6.0.0",
-    "gulp-terser": "^2.1.0"
+    "gulp-terser": "^2.1.0",
+    "serve": "^14.2.4"
   }
 }

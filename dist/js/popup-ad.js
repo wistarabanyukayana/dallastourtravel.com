@@ -1,1 +1,0 @@
-!function(u){"use strict";u(window),u("#popup-ad")}(jQuery);

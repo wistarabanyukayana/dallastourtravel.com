@@ -5,8 +5,10 @@ import terser from "gulp-terser";
 import htmlmin from "gulp-htmlmin";
 import imagemin from "gulp-imagemin";
 import rev from "gulp-rev";
+import revDelete from "gulp-rev-delete-original";
 import revRewrite from "gulp-rev-rewrite";
 import { deleteAsync as del } from "del";
+import fs from "fs";
 
 const sync = browserSync.create();
 const isProd = process.env.NODE_ENV === "production";
@@ -16,39 +18,30 @@ function clean() {
   return del(["dist/**", "!dist"]);
 }
 
-// Optimize CSS
+// Update CSS processing
 function css() {
   return gulp
-    .src(["css/*.css", "!css/*.min.css"])
-    .pipe(
-      csso({
-        restructure: true,
-        comments: "exclamation",
-      })
-    )
+    .src("css/**/*.css", { base: "css" }) // Maintain directory structure
+    .pipe(csso())
     .pipe(gulp.dest("dist/css"))
     .pipe(sync.stream());
 }
 
-// Optimize JS
+// Update JS processing
 function js() {
   return gulp
-    .src(["js/*.js", "!js/*.min.js"])
-    .pipe(
-      terser({
-        ecma: 2020,
-        keep_fnames: true,
-      })
-    )
+    .src("js/**/*.js", { base: "js" }) // Maintain directory structure
+    .pipe(terser())
     .pipe(gulp.dest("dist/js"));
 }
 
-// Optimize images
+// Update image optimization
 function images() {
   return gulp
-    .src(["assets/img/**/*.{png,jpg,jpeg,gif,svg}", "!assets/img/loader.gif"])
+    .src(["assets/img/**/*.{png,jpg,jpeg,gif,svg}", "!assets/img/loader.gif"], {
+      base: "assets/img",
+    }) // Maintain directory structure
     .pipe(imagemin())
-    .on("end", () => console.log("Images optimized successfully"))
     .pipe(gulp.dest("dist/assets/img"));
 }
 
@@ -64,10 +57,10 @@ function copyAssets() {
     .pipe(gulp.dest("dist"));
 }
 
-// HTML processing
+// Update HTML processing
 function html() {
   return gulp
-    .src(["**/*.{html,shtml}", "!node_modules/**"]) // Add shtml extension
+    .src("**/*.{html,shtml}", { base: "." })
     .pipe(
       htmlmin({
         collapseWhitespace: true,
@@ -78,43 +71,68 @@ function html() {
     .pipe(gulp.dest("dist"));
 }
 
-// Revision assets
 function revision() {
   return gulp
     .src(["dist/css/**/*.css", "dist/js/**/*.js", "dist/assets/img/**/*"], {
       base: "dist",
-      allowEmpty: true, // Add this to prevent errors if no files are found
+      allowEmpty: true,
     })
     .pipe(rev())
+    .pipe(revDelete())
     .pipe(gulp.dest("dist"))
-    .pipe(rev.manifest())
-    .pipe(gulp.dest("dist"));
+    .pipe(
+      rev.manifest("dist/rev-manifest.json", {
+        // Explicit path
+        base: "dist",
+        merge: false,
+      })
+    )
+    .pipe(gulp.dest(".")); // Write manifest to root (will move it later)
 }
 
-// Rewrite HTML with revved assets
+function moveManifest() {
+  return gulp.src("rev-manifest.json").pipe(gulp.dest("dist"));
+}
+
 function revRewriteHtml() {
+  // Read the manifest as a JSON object
+  const manifest = JSON.parse(
+    fs.readFileSync("./dist/rev-manifest.json", "utf8")
+  );
+
   return gulp
-    .src("dist/rev-manifest.json", { allowEmpty: true })
-    .pipe(gulp.src("dist/**/*.{html,shtml}"))
-    .pipe(revRewrite())
+    .src("dist/**/*.{html,shtml}")
+    .pipe(revRewrite({ manifest }))
     .pipe(gulp.dest("dist"));
 }
 
-// Development server
 function serve(done) {
   sync.init({
     server: {
       baseDir: "dist",
       serveStaticOptions: {
-        extensions: ["html", "shtml"], // Add shtml extension
+        extensions: ["html"],
         setHeaders: (res, path) => {
-          if (path.endsWith(".js")) {
-            res.setHeader("Content-Type", "application/javascript");
+          // Set correct MIME types
+          const mimeTypes = {
+            ".css": "text/css",
+            ".js": "application/javascript",
+            ".png": "image/png",
+            ".jpg": "image/jpeg",
+            ".gif": "image/gif",
+            ".svg": "image/svg+xml",
+          };
+
+          const ext = path.match(/\.\w+$/)?.[0];
+          if (ext && mimeTypes[ext]) {
+            res.setHeader("Content-Type", mimeTypes[ext]);
           }
         },
       },
     },
-    // ... rest of config
+    port: 3000,
+    open: false,
+    notify: false,
   });
   done();
 }
@@ -133,11 +151,11 @@ function reload(done) {
   done();
 }
 
-// Update build sequence
 const build = gulp.series(
   clean,
   gulp.parallel(css, js, images, copyAssets, html, copyLoader),
   revision,
+  moveManifest, // Add this
   revRewriteHtml
 );
 
