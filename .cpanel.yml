@@ -2,17 +2,16 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/daly1882/public_html/
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp produk-layanan.html $DEPLOYPATH
-    - /bin/cp artikel.html $DEPLOYPATH
-    - /bin/cp galeri.html $DEPLOYPATH
-    - /bin/cp tentang-dallas.html $DEPLOYPATH
-    - /bin/cp syarat-ketentuan.html $DEPLOYPATH
-    - /bin/cp kebijakan-privasi.html $DEPLOYPATH
-    - /bin/cp 404.shtml $DEPLOYPATH
-    - /bin/cp -R haji $DEPLOYPATH
-    - /bin/cp -R umroh $DEPLOYPATH
-    - /bin/cp -R wisata-halal $DEPLOYPATH
-    - /bin/cp -R css $DEPLOYPATH
-    - /bin/cp -R js $DEPLOYPATH
-    - /bin/cp -R assets $DEPLOYPATH
+    - /bin/cp dist/index.html $DEPLOYPATH
+    - /bin/cp dist/artikel.html $DEPLOYPATH
+    - /bin/cp dist/galeri.html $DEPLOYPATH
+    - /bin/cp dist/tentang-dallas.html $DEPLOYPATH
+    - /bin/cp dist/syarat-ketentuan.html $DEPLOYPATH
+    - /bin/cp dist/kebijakan-privasi.html $DEPLOYPATH
+    - /bin/cp dist/404.shtml $DEPLOYPATH
+    - /bin/cp -R dist/haji $DEPLOYPATH
+    - /bin/cp -R dist/umroh $DEPLOYPATH
+    - /bin/cp -R dist/wisata-halal $DEPLOYPATH
+    - /bin/cp -R dist/css $DEPLOYPATH
+    - /bin/cp -R dist/js $DEPLOYPATH
+    - /bin/cp -R dist/assets $DEPLOYPATH
