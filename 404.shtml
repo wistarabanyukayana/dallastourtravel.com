@@ -64,6 +64,9 @@
   </head>
 
   <body>
+    <!--====== LOADER =====-->
+    <div class="loader"></div>
+
     <!--===== INNERPAGE-WRAPPER ====-->
     <section class="innerpage-wrapper h-100">
       <div id="error-text" class="section-padding back-size h-100">

@@ -64,6 +64,9 @@
 
   <body>
     <div class="wrapper">
+      <!--====== LOADER =====-->
+      <div class="loader"></div>
+
       <!--======== SEARCH-OVERLAY =========-->
       <div id="myOverlay" class="overlay">
         <span class="closebtn" onClick="closeSearch()" title="Close Overlay"
@@ -131,7 +134,7 @@
                   >Beranda</a
                 >
               </li>
-              <li class="nav-item dropdown active">
+              <li class="nav-item dropdown">
                 <a
                   class="nav-link"
                   data-bs-toggle="dropdown"
@@ -146,7 +149,7 @@
                     <a class="dropdown-item" href="/umroh">Umroh</a>
                   </li>
                   <li>
-                    <a class="dropdown-item active" href="/wisata-halal"
+                    <a class="dropdown-item" href="/wisata-halal"
                       >Wisata Halal</a
                     >
                   </li>
@@ -155,7 +158,7 @@
               <li class="nav-item dropdown">
                 <a href="artikel.html" class="nav-link">Artikel</a>
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown active">
                 <a href="galeri.html" class="nav-link">Galeri</a>
               </li>
               <li class="nav-item dropdown">
@@ -196,7 +199,7 @@
               >
 
               <a
-                class="items-list collapsed active"
+                class="items-list collapsed"
                 href="#product&service-links"
                 data-bs-toggle="collapse"
                 aria-expanded="false"
@@ -206,9 +209,7 @@
               <div class="sub-menu collapse" id="product&service-links">
                 <a class="items-list" href="/haji">Haji</a>
                 <a class="items-list" href="/umroh">Umroh</a>
-                <a class="items-list active" href="/wisata-halal"
-                  >Wisata Halal</a
-                >
+                <a class="items-list" href="/wisata-halal">Wisata Halal</a>
               </div>
               <!-- end sub-menu -->
 
@@ -217,7 +218,7 @@
                 >Artikel</a
               >
 
-              <a class="items-list" href="galeri.html"
+              <a class="items-list active" href="galeri.html"
                 ><span><i class="fa fa-picture-o link-icon"></i></span>Galeri</a
               >
 

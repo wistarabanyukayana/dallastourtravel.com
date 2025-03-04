@@ -38,17 +38,17 @@ function js() {
 // Update image optimization
 function images() {
   return gulp
-    .src(["assets/img/**/*", "!assets/img/index.html"], {
-      base: "assets/img",
-      encoding: false,
-    }) // Maintain directory structure
+    .src(
+      [
+        "assets/img/**/*.{apng,png,avif,gif,jpg,jpeg,jfif,pjpeg,pjp,png,svg,webp}",
+      ],
+      {
+        base: "assets/img",
+        encoding: false,
+      }
+    ) // Maintain directory structure
     .pipe(imagemin({ verbose: true }))
     .pipe(gulp.dest("dist/assets/img"));
-}
-
-// Add separate task for loader.gif
-function copyLoader() {
-  return gulp.src("assets/img/loader.gif").pipe(gulp.dest("dist/assets/img"));
 }
 
 // Copy other assets
@@ -79,11 +79,18 @@ function html() {
 
 function revision() {
   return gulp
-    .src(["dist/css/**/*.css", "dist/js/**/*.js", "dist/assets/img/**/*"], {
-      base: "dist",
-      allowEmpty: true,
-      encoding: false,
-    })
+    .src(
+      [
+        "dist/css/**/*.css",
+        "dist/js/**/*.js",
+        "dist/assets/img/**/*.{apng,png,avif,gif,jpg,jpeg,jfif,pjpeg,pjp,png,svg,webp}",
+      ],
+      {
+        base: "dist",
+        allowEmpty: true,
+        encoding: false,
+      }
+    )
     .pipe(rev())
     .pipe(revDelete())
     .pipe(gulp.dest("dist"))
@@ -91,12 +98,12 @@ function revision() {
     .pipe(gulp.dest("dist"));
 }
 
-function revRewriteHtml() {
+function revRewriteAll() {
   // Read manifest as a stream and merge with HTML files
   const manifest = fs.readFileSync("dist/rev-manifest.json");
 
   return gulp
-    .src("dist/**/*.{html,shtml}")
+    .src("dist/**/*.{html,shtml,css,js}")
     .pipe(revRewrite({ manifest }))
     .pipe(gulp.dest("dist"));
 }
@@ -150,7 +157,7 @@ const build = gulp.series(
   clean,
   gulp.parallel(css, js, images, copyAssets, html),
   revision,
-  revRewriteHtml
+  revRewriteAll
 );
 
 // Development workflow
