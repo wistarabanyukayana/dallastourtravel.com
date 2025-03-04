@@ -38,10 +38,14 @@ function js() {
 // Update image optimization
 function images() {
   return gulp
-    .src(["assets/img/**/*.{png,jpg,jpeg,gif,svg}", "!assets/img/loader.gif"], {
-      base: "assets/img",
-    }) // Maintain directory structure
-    .pipe(imagemin())
+    .src(
+      ["assets/img/**/*", "!assets/img/index.html", "!assets/img/loader.gif"],
+      {
+        base: "assets/img",
+        encoding: false,
+      }
+    ) // Maintain directory structure
+    .pipe(imagemin({ verbose: true }))
     .pipe(gulp.dest("dist/assets/img"));
 }
 
@@ -53,7 +57,10 @@ function copyLoader() {
 // Copy other assets
 function copyAssets() {
   return gulp
-    .src(["assets/favicons/**", "assets/fonts/**"], { base: "." })
+    .src(["assets/favicons/**", "assets/fonts/**"], {
+      base: ".",
+      encoding: false,
+    })
     .pipe(gulp.dest("dist"));
 }
 
@@ -66,6 +73,8 @@ function html() {
         collapseWhitespace: true,
         removeComments: true,
         minifyJS: true,
+        quoteCharacter: '"',
+        keepClosingSlash: true, // For SVG/XML compatibility
       })
     )
     .pipe(gulp.dest("dist"));
@@ -76,29 +85,18 @@ function revision() {
     .src(["dist/css/**/*.css", "dist/js/**/*.js", "dist/assets/img/**/*"], {
       base: "dist",
       allowEmpty: true,
+      encoding: false,
     })
     .pipe(rev())
     .pipe(revDelete())
     .pipe(gulp.dest("dist"))
-    .pipe(
-      rev.manifest("dist/rev-manifest.json", {
-        // Explicit path
-        base: "dist",
-        merge: false,
-      })
-    )
-    .pipe(gulp.dest(".")); // Write manifest to root (will move it later)
-}
-
-function moveManifest() {
-  return gulp.src("rev-manifest.json").pipe(gulp.dest("dist"));
+    .pipe(rev.manifest())
+    .pipe(gulp.dest("dist"));
 }
 
 function revRewriteHtml() {
-  // Read the manifest as a JSON object
-  const manifest = JSON.parse(
-    fs.readFileSync("./dist/rev-manifest.json", "utf8")
-  );
+  // Read manifest as a stream and merge with HTML files
+  const manifest = fs.readFileSync("dist/rev-manifest.json");
 
   return gulp
     .src("dist/**/*.{html,shtml}")
@@ -155,7 +153,6 @@ const build = gulp.series(
   clean,
   gulp.parallel(css, js, images, copyAssets, html, copyLoader),
   revision,
-  moveManifest, // Add this
   revRewriteHtml
 );
 
