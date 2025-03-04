@@ -38,13 +38,10 @@ function js() {
 // Update image optimization
 function images() {
   return gulp
-    .src(
-      ["assets/img/**/*", "!assets/img/index.html", "!assets/img/loader.gif"],
-      {
-        base: "assets/img",
-        encoding: false,
-      }
-    ) // Maintain directory structure
+    .src(["assets/img/**/*", "!assets/img/index.html"], {
+      base: "assets/img",
+      encoding: false,
+    }) // Maintain directory structure
     .pipe(imagemin({ verbose: true }))
     .pipe(gulp.dest("dist/assets/img"));
 }
@@ -151,7 +148,7 @@ function reload(done) {
 
 const build = gulp.series(
   clean,
-  gulp.parallel(css, js, images, copyAssets, html, copyLoader),
+  gulp.parallel(css, js, images, copyAssets, html),
   revision,
   revRewriteHtml
 );
