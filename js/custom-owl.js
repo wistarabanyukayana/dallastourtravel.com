@@ -38,9 +38,11 @@
     responsive: {
       479: {
         items: 1,
+        margin: 100,
       },
       600: {
         items: 1,
+        margin: 100,
       },
       768: {
         items: 2,
@@ -81,9 +83,11 @@
     responsive: {
       479: {
         items: 1,
+        margin: 100,
       },
       600: {
         items: 1,
+        margin: 100,
       },
       768: {
         items: 2,
@@ -124,9 +128,11 @@
     responsive: {
       479: {
         items: 1,
+        margin: 100,
       },
       600: {
         items: 1,
+        margin: 100,
       },
       768: {
         items: 2,
