@@ -208,3 +208,14 @@ table.details > tbody > tr > td {
   margin: 10px 15px !important;
   border-radius: 25px !important;
 }
+
+.itienary {
+  display: flex;
+  text-align: center;
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .itienary {
+    flex-wrap: wrap;
+  }
+}
