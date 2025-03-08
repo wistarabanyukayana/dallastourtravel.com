@@ -16,7 +16,6 @@
   promoOffers.owlCarousel({
     items: 1,
     loop: true,
-    center: true,
     autoWidth: true,
     stagePadding: 15,
     margin: 15,
@@ -39,10 +38,12 @@
       479: {
         items: 1,
         margin: 100,
+        center: true,
       },
       600: {
         items: 1,
         margin: 100,
+        center: true,
       },
       768: {
         items: 2,
@@ -61,7 +62,6 @@
   umrohOffers.owlCarousel({
     items: 1,
     loop: true,
-    center: true,
     autoWidth: true,
     stagePadding: 15,
     margin: 15,
@@ -84,10 +84,12 @@
       479: {
         items: 1,
         margin: 100,
+        center: true,
       },
       600: {
         items: 1,
         margin: 100,
+        center: true,
       },
       768: {
         items: 2,
@@ -106,7 +108,6 @@
   hajiOffers.owlCarousel({
     items: 1,
     loop: true,
-    center: true,
     autoWidth: true,
     stagePadding: 15,
     margin: 15,
@@ -129,10 +130,12 @@
       479: {
         items: 1,
         margin: 100,
+        center: true,
       },
       600: {
         items: 1,
         margin: 100,
+        center: true,
       },
       768: {
         items: 2,
