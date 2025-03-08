@@ -214,7 +214,7 @@ table.details > tbody > tr > td {
   text-align: center;
 }
 
-@media (min-width: 576px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .itienary {
     flex-wrap: wrap;
   }
