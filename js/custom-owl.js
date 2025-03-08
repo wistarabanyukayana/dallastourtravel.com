@@ -17,8 +17,9 @@
     items: 1,
     loop: true,
     autoWidth: true,
+    center: true,
     stagePadding: 15,
-    margin: 15,
+    margin: 100,
 
     //Autoplay
     autoplay: true,
@@ -37,13 +38,9 @@
     responsive: {
       479: {
         items: 1,
-        margin: 100,
-        center: true,
       },
       600: {
         items: 1,
-        margin: 100,
-        center: true,
       },
       768: {
         items: 2,
@@ -63,8 +60,9 @@
     items: 1,
     loop: true,
     autoWidth: true,
+    center: true,
     stagePadding: 15,
-    margin: 15,
+    margin: 100,
 
     //Autoplay
     autoplay: true,
@@ -83,13 +81,9 @@
     responsive: {
       479: {
         items: 1,
-        margin: 100,
-        center: true,
       },
       600: {
         items: 1,
-        margin: 100,
-        center: true,
       },
       768: {
         items: 2,
@@ -109,8 +103,9 @@
     items: 1,
     loop: true,
     autoWidth: true,
+    center: true,
     stagePadding: 15,
-    margin: 15,
+    margin: 100,
 
     //Autoplay
     autoplay: true,
@@ -129,13 +124,9 @@
     responsive: {
       479: {
         items: 1,
-        margin: 100,
-        center: true,
       },
       600: {
         items: 1,
-        margin: 100,
-        center: true,
       },
       768: {
         items: 2,
