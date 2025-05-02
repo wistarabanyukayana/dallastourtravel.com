@@ -19,7 +19,7 @@
     autoWidth: true,
     center: true,
     stagePadding: 15,
-    margin: 100,
+    margin: 25,
 
     //Autoplay
     autoplay: true,
@@ -62,7 +62,7 @@
     autoWidth: true,
     center: true,
     stagePadding: 15,
-    margin: 100,
+    margin: 25,
 
     //Autoplay
     autoplay: true,
