@@ -1,116 +1,36 @@
-# Dallas Tour Travel Website
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-A responsive website for Dallas Tour Travel, built with pure HTML, CSS, and JavaScript. This project showcases travel packages, galleries, articles, and company information for PT. Delta Laras Wisata.
+## Getting Started
 
-## Table of Contents
+First, run the development server:
 
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [Installation](#installation)
-- [Development](#development)
-- [Build](#build)
-- [Serving Locally](#serving-locally)
-- [Customization](#customization)
-- [License](#license)
-- [Contact](#contact)
-
-## Features
-
-- Responsive design for desktop and mobile
-- Travel package pages (Haji, Umroh, Wisata Halal)
-- Gallery and articles
-- Privacy policy and terms pages
-- Custom forms and sliders
-- Optimized assets and CSS
-- Easy to extend and maintain
-
-## Project Structure
-
-```
-.
-├── assets/                # Images, fonts, favicons
-├── css/                   # Stylesheets (Bootstrap, custom, responsive, color)
-├── js/                    # JavaScript files
-├── haji/                  # Haji package pages
-├── umroh/                 # Umroh package pages
-├── wisata-halal/          # Halal tourism package pages
-├── index.html             # Main landing page
-├── artikel.html           # Articles
-├── galeri.html            # Gallery
-├── kebijakan-privasi.html # Privacy policy
-├── syarat-ketentuan.html  # Terms & conditions
-├── tentang-dallas.html    # About page
-├── 404.shtml              # Custom 404 page
-├── gulpfile.js            # Gulp build configuration
-├── package.json           # Project metadata and scripts
-├── README.md              # Project documentation
-└── ...                    # Other supporting files
-```
-
-## Installation
-
-1. **Clone the repository:**
-
-   ```sh
-   git clone https://github.com/wistarabanyukayana/dallastourtravel.com.git
-   cd dallastourtravel.com
-   ```
-
-2. **Install dependencies:**
-   ```sh
-   npm install
-   ```
-
-## Development
-
-To start a development server with live reloading:
-
-```sh
+```bash
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-## Build
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-To build the project for production (minifies HTML, CSS, JS, and optimizes assets):
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-```sh
-npm run build
-```
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Serving Locally
+## Learn More
 
-After building, serve the `dist` folder locally:
+To learn more about Next.js, take a look at the following resources:
 
-```sh
-npm run serve
-```
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## Customization
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-- **Styles:** Edit files in [`css/`](css/) for custom styles.
-- **Assets:** Add images, fonts, and icons in [`assets/`](assets/).
-- **Pages:** Modify or add HTML files for new sections.
-- **Gulp Tasks:** Update [`gulpfile.js`](gulpfile.js) for custom build steps.
+## Deploy on Vercel
 
-## License
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-This project and its source code are proprietary and confidential to PT. Delta Laras Wisata. Unauthorized copying, distribution, or use of this code, via any medium, is strictly prohibited. No open source license is granted. See [`LICENSE`](LICENSE) for details.
-
-**Note:** The MIT License was previously included in error. This project has always been intended as proprietary software. If you received a copy under the MIT License, please disregard and refer to the current proprietary terms.
-
-## Contact
-
-For issues, suggestions, or contributions, please visit the [GitHub Issues page](https://github.com/wistarabanyukayana/dallastourtravel.com/issues).
-
----
-
-**PT. Delta Laras Wisata**  
-Website: [dallastourtravel.com](https://dallastourtravel.com)
-
-To deploy website
-
-1. do `npm run clean` in folder root with admin access
-2. do `npm run build` in folder root with admin access
-3. do github commit
-4. do github pull in cpanel
-5. do deploy in cpanel
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

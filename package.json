@@ -1,36 +1,31 @@
 {
   "name": "dallastourtravel.com",
-  "version": "1.0.0",
-  "description": "A Website build with pure HTML, CSS, and JS for dallastourtravel.com",
-  "type": "module",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "build": "gulp build",
-    "dev": "gulp dev",
-    "clean": "gulp clean",
-    "serve": "serve dist"
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wistarabanyukayana/dallas-tour-travel-preview.git"
+  "dependencies": {
+    "@prisma/adapter-mariadb": "^6.14.0",
+    "@prisma/client": "^6.14.0",
+    "next": "15.4.6",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
   },
-  "author": "Wistara Banyu Kayana",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/wistarabanyukayana/dallas-tour-travel-preview/issues"
-  },
-  "homepage": "https://github.com/wistarabanyukayana/dallas-tour-travel-preview#readme",
   "devDependencies": {
-    "browser-sync": "^3.0.3",
-    "del": "^8.0.0",
-    "gulp": "^5.0.0",
-    "gulp-csso": "^4.0.1",
-    "gulp-htmlmin": "^5.0.1",
-    "gulp-imagemin": "^8.0.0",
-    "gulp-rev": "^11.0.0",
-    "gulp-rev-delete-original": "^0.2.3",
-    "gulp-rev-rewrite": "^6.0.0",
-    "gulp-terser": "^2.1.0",
-    "serve": "^14.2.4"
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.4.6",
+    "prisma": "^6.14.0",
+    "tailwindcss": "^4",
+    "tsx": "^4.20.4",
+    "typescript": "^5"
   }
 }

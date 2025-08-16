@@ -1,1 +1,0 @@
-!function(i){"use strict";i(window).on("load",(function(){i(".flexslider").flexslider({animation:"slide",flexDirectionNav:!1,controlNav:!1})}))}(jQuery);
