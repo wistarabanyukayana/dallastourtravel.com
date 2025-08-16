@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dallas Tour Travel Website (Next.js + Prisma + MariaDB)
+
+This project is an initial setup for the Dallas Tour Travel website, built with [Next.js](https://nextjs.org), [Prisma ORM](https://www.prisma.io/), and MariaDB. The codebase is in its early phase and currently includes the foundational configuration for future development.
+
+## Project Structure
+
+```
+.
+├── prisma/                # Prisma schema and migrations
+│   ├── schema.prisma
+│   └── migrations/
+├── public/                # Static assets
+├── src/
+│   ├── app/               # Next.js app directory
+│   └── lib/               # Prisma client setup and test script
+├── .env                   # Environment variables (MariaDB connection)
+├── package.json           # Project dependencies and scripts
+├── README.md              # Project documentation
+└── ...                    # Other config files
+```
+
+## Tech Stack
+
+- **Next.js** for frontend and API routes
+- **Prisma ORM** with MariaDB adapter ([`@prisma/adapter-mariadb`](https://www.npmjs.com/package/@prisma/adapter-mariadb))
+- **Tailwind CSS** for styling
+- **TypeScript** for type safety
 
 ## Getting Started
 
-First, run the development server:
+1. **Install dependencies:**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+   ```sh
+   npm install
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Set up environment variables:**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+   - Edit [`.env`](.env) with your MariaDB credentials.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. **Generate Prisma Client:**
 
-## Learn More
+   ```sh
+   npx prisma generate
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+4. **Run migrations (if you add models):**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```sh
+   npx prisma migrate dev --name init
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+5. **Start the development server:**
 
-## Deploy on Vercel
+   ```sh
+   npm run dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+6. **Test Prisma connection:**
+   - Run [`src/lib/prisma-test.ts`](src/lib/prisma-test.ts) using:
+     ```sh
+     npx tsx src/lib/prisma-test.ts
+     ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Status
+
+> **Note:**  
+> This repository contains only the initial setup and basic configuration. Core features and pages will be developed in future commits.
+
+## Useful Links
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Prisma Documentation](https://www.prisma.io/docs)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+
+## License
+
+MIT
+
+For questions or suggestions, please open an issue or contact------
+
+For questions or suggestions, please open an issue or contact
